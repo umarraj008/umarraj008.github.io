@@ -1,0 +1,487 @@
+
+* {
+    margin: 0 auto; 
+    padding: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+:root {
+    /* --accent-blue: #61b7ff; */
+    --accent-blue: #2EA0FF;
+    /* --accent-blue: #FFA961; */
+}
+
+body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* main */
+main {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+   /******************/
+  /*  MOBILE LAYOUT */
+ /******************/
+@media only screen and (max-width: 425px) {
+    body {
+        min-width: 481px;
+        max-width: 1180px;
+    }
+
+    /* main container */
+    main div#main-container {
+        margin-top: 15px;
+        max-width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        max-height: max-content;
+        background-color: white;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        display: block;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* left container */
+    main div#main-container div#left-container {
+        /* max-width: max-content;
+        min-width: 60px; */
+        max-width: 100%;
+        /* background-color: lime; */
+        display: flex;
+        padding: 10px;
+        align-items: center;
+    }
+
+    /* left container image */
+    main div#main-container div#left-container img {
+        object-fit: contain;
+        width: 60%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* right container */
+    main div#main-container div#right-container {
+        /* max-width: 100%; */
+        /* background-color: blue; */
+        /* margin-left: 15px; */
+        /* margin-right: 0px; */
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* right container hello world text */
+    main div#main-container div#right-container h3 {
+        color: var(--accent-blue);
+        font-size: 18px;
+    }
+
+
+    /* right container main title */
+    main div#main-container div#right-container h1 {
+        font-size: 40px;
+    }
+
+    /* right container main title span */
+    main div#main-container div#right-container h1 span {
+        color: var(--accent-blue);
+        text-shadow: 0px 0px 25px rgba(46, 160, 255, 0.5);
+    }
+
+    /* right container text */
+    main div#main-container div#right-container p {
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+
+
+    /* button container */
+    main div#main-container div#right-container div#button-container {
+        /* background-color: purple; */
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /* button */
+    main div#main-container div#right-container div#button-container div.button {
+        width: 40%;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 15px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        /* border: solid 2px black; */
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        /* background-color: orange; */
+        display: flex;
+        align-items: center;
+        transition: 0.2s ease-in-out;
+        float: left;
+    }
+
+    /* button hover */
+    main div#main-container div#right-container div#button-container div.button:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        /* background-color: var(--accent-blue); */
+        box-shadow: 0px 0px 25px rgba(46, 160, 255, 1);
+    }
+
+    /* button image */
+    main div#main-container div#right-container div#button-container div.button img {
+        width: 30px;
+        height: 30px;
+        object-fit: fill;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    /* button text */
+    main div#main-container div#right-container div#button-container div.button a {
+        text-decoration: none;
+        margin-left: 5px;
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    /* typing animation */
+    #typing-animation {
+        height: 50px;
+        margin-left: 0px;
+        max-width: 481px;
+        width: max-content;
+        animation: blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Roboto', monospace;
+        /* font-family: monospace; */
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+   /******************/
+  /*  TABLET LAYOUT */
+ /******************/
+@media only screen and (min-width: 426px) and (max-width: 1180px) {
+    body {
+        min-width: 481px;
+        max-width: 1180px;
+    }
+
+    /* main container */
+    main div#main-container {
+        margin-top: 15px;
+        max-width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        max-height: max-content;
+        background-color: white;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        display: block;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* left container */
+    main div#main-container div#left-container {
+        /* max-width: max-content;
+        min-width: 60px; */
+        max-width: 100%;
+        /* background-color: lime; */
+        display: flex;
+        padding: 10px;
+        align-items: center;
+    }
+
+    /* left container image */
+    main div#main-container div#left-container img {
+        object-fit: contain;
+        width: 60%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* right container */
+    main div#main-container div#right-container {
+        /* max-width: 100%; */
+        /* background-color: blue; */
+        /* margin-left: 15px; */
+        /* margin-right: 0px; */
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* right container hello world text */
+    main div#main-container div#right-container h3 {
+        color: var(--accent-blue);
+        font-size: 20px;
+    }
+
+
+    /* right container main title */
+    main div#main-container div#right-container h1 {
+        font-size: 40px;
+    }
+
+    /* right container main title span */
+    main div#main-container div#right-container h1 span {
+        color: var(--accent-blue);
+        text-shadow: 0px 0px 25px rgba(46, 160, 255, 0.5);
+    }
+
+    /* right container text */
+    main div#main-container div#right-container p {
+        font-size: 18px;
+        color: #4d4d4d;
+    }
+
+
+    /* button container */
+    main div#main-container div#right-container div#button-container {
+        /* background-color: purple; */
+        display: flex;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /* button */
+    main div#main-container div#right-container div#button-container div.button {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 15px;
+        padding: 15px;
+        margin-top: 7.5px;
+        margin-bottom: 7.5px;
+        border-radius: 30px;
+        /* border: solid 2px black; */
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        /* background-color: orange; */
+        display: flex;
+        align-items: center;
+        transition: 0.2s ease-in-out;
+    }
+
+    /* button hover */
+    main div#main-container div#right-container div#button-container div.button:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        /* background-color: var(--accent-blue); */
+        box-shadow: 0px 0px 25px rgba(46, 160, 255, 1);
+    }
+
+    /* button image */
+    main div#main-container div#right-container div#button-container div.button img {
+        width: 30px;
+        height: 30px;
+        object-fit: fill;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    /* button text */
+    main div#main-container div#right-container div#button-container div.button a {
+        text-decoration: none;
+        margin-left: 5px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
+
+    /* typing animation */
+    #typing-animation {
+        height: 50px;
+        margin-left: 0px;
+        max-width: 481px;
+        width: max-content;
+        animation: blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Roboto', monospace;
+        /* font-family: monospace; */
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+   /******************/
+  /* DESKTOP LAYOUT */
+ /******************/
+@media only screen and (min-width: 1181px) {
+
+    body {
+        min-width: 1181px;
+    }
+
+    /* main container */
+    main div#main-container {
+        margin-top: 100px;
+        max-width: 1152px;
+        max-height: max-content;
+        background-color: white;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        display: flex;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* left container */
+    main div#main-container div#left-container {
+        max-width: max-content;
+        /* background-color: lime; */
+    }
+
+    /* left container image */
+    main div#main-container div#left-container img {
+        object-fit: contain;
+        width: auto;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* right container */
+    main div#main-container div#right-container {
+        /* max-width: 100%; */
+        /* background-color: blue; */
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+
+    /* right container hello world text */
+    main div#main-container div#right-container h3 {
+        color: var(--accent-blue);
+    }
+
+
+    /* right container main title */
+    main div#main-container div#right-container h1 {
+        font-size: 60px;
+    }
+
+    /* right container main title span */
+    main div#main-container div#right-container h1 span {
+        color: var(--accent-blue);
+        text-shadow: 0px 0px 25px rgba(46, 160, 255, 0.5);
+    }
+
+    /* right container text */
+    main div#main-container div#right-container p {
+        font-size: 16px;
+        color: #4d4d4d;
+    }
+
+
+    /* button container */
+    main div#main-container div#right-container div#button-container {
+        /* background-color: purple; */
+        display: flex;
+        width: max-content;
+        height: 50px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    /* button */
+    main div#main-container div#right-container div#button-container div.button {
+        width: 120px;
+        padding: 15px;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        border-radius: 30px;
+        /* border: solid 2px black; */
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        /* background-color: orange; */
+        display: flex;
+        align-items: center;
+        transition: 0.2s ease-in-out;
+    }
+
+    /* first button */
+    main div#main-container div#right-container div#button-container div.button:first-child {
+        margin-left: 0px;
+    }
+
+    /* second button */
+    main div#main-container div#right-container div#button-container div.button:last-child {
+        margin-right: 30px;
+    }
+
+    /* button hover */
+    main div#main-container div#right-container div#button-container div.button:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: var(--accent-blue);
+        box-shadow: 0px 0px 25px rgba(46, 160, 255, 1);
+    }
+
+    /* button image */
+    main div#main-container div#right-container div#button-container div.button img {
+        width: 30px;
+        height: 30px;
+        object-fit: fill;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    /* button text */
+    main div#main-container div#right-container div#button-container div.button a {
+        text-decoration: none;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+
+    /* typing animation */
+    #typing-animation {
+        height: 70px;
+        margin-left: 0px;
+        width: max-content;
+        animation: blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: 'Roboto', monospace;
+        /* font-family: monospace; */
+        font-size: 60px;
+        font-weight: 400;
+    }
+}
+
+   /******************/
+  /*   ANIMATIONS   */
+ /******************/
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}

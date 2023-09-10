@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="My personal website that displays my work and projects">
+        <meta name="author" content="Umar Rajput">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/maintenance.css">
+        <link rel="icon" href="./resources/umarLogoV3.ico" type="image/gif" sizes="16x16">
+        <title>Umar Rajput</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div id="main-container">
+                <div id="left-container">
+                    <img src="resources/umarLogoV3.png" width="100px" height="100px" />
+                </div>
+                <div id="right-container">
+                    <h3>// Hello World!</h3>
+                    <br>
+                    
+                    <h1>I'm <span>Umar Rajput</span></h1>
+                    <div id="typing-animation"></div>
+                    <br>
+                    
+                    <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>
+                    <br>
+
+                    <p>This website is currently under development, but check out my LinkedIn, GitHub and CV:</p>
+                    <br>
+
+                    <div id="button-container">
+                        <div class="button" onclick="window.open('https://www.linkedin.com/in/umar-rajput/', '_blank')">
+                            <img src="https://pics.freeicons.io/uploads/icons/png/541526511556105711-512.png" width="50px" height="50px" />
+                            <a href="https://www.linkedin.com/in/umar-rajput/" target="_blank" rel="noopener noreferrer">umar-rajput</a>
+                        </div>
+                        <div class="button" onclick="window.open('https://github.com/umarraj008/', '_blank')">
+                            <img src="https://pics.freeicons.io/uploads/icons/png/4422549621553664904-512.png" width="50px" height="50px" />
+                            <a href="https://github.com/umarraj008/" target="_blank" rel="noopener noreferrer">umarraj008</a>
+                        </div>
+                        <div class="button" onclick="window.open('resources/Umar Rajput CV 2023.pdf', '_blank')">
+                            <img src="https://pics.freeicons.io/uploads/icons/png/45822345316297287213937-512.png" width="50px" height="50px" />
+                            <a href="resources/Umar Rajput CV 2023.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                        </div>
+                        <div class="button" onclick="window.open('mailto: umar.rajput02@gmail.com')">
+                            <img src="https://pics.freeicons.io/uploads/icons/png/5876661171530077749-512.png" width="50px" height="50px" />
+                            <a href="mailto: umar.rajput02@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typing Animation Script -->
+            <script>
+                var i = 0;
+                var text = "a Software Developer";
+                function type() {
+                    if (i < text.length) {
+                        document.getElementById("typing-animation").innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, 100);
+                    } else {
+                        clearTimeout(type);
+                        setTimeout(function() {
+                            i = document.getElementById("typing-animation").innerHTML.length;
+                            untype();
+                        }, 10000);
+                    }
+                }
+
+                function untype() {
+                    if (i > 0) {
+                        document.getElementById("typing-animation").innerHTML = (document.getElementById("typing-animation").innerHTML).substring(0, document.getElementById("typing-animation").innerHTML.length-1);
+                        i--;
+                        setTimeout(untype, 100);
+                    } else {
+                        clearTimeout(untype);
+                        i = 0;
+                        type();
+                    }
+                }
+
+                setTimeout(function() {type();}, 1000);
+            </script>
+        </main>
+    </body>
+</html>
