@@ -11,13 +11,16 @@
         <meta name="description" content="My personal website that displays my work and projects">
         <meta name="author" content="Umar Rajput">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.css">
         <link rel="icon" href="./resources/umarLogoV3.ico" type="image/gif" sizes="16x16">
         <title>Umar Rajput</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
         <script src="js/typingAnimation.js"></script>
+        <script src="js/sectionManager.js"></script>
     </head>
 
     <!-- Body Section -->
@@ -25,49 +28,148 @@
 
         <!-- Header Section -->
         <header>
-            <div id="header-inner-container">
-                <div id="header-left">
-                    <img id="header-logo" src="resources/umarLogoV3.png" width="50px" height="50px" />
-                    <h1 id="header-logo-text">Umar</h1>
+            <div id="innerHeader">
+                <div id="leftHeader">
+                    <img src="resources/umarLogoV3.png" width="100px" height="100px" alt="Logo" />
+                    <h1>Umar Rajput</h1>
                 </div>
-
-                <div id="header-line-seperator"></div>
-
-                <div id="header-right">
-                    <div class="header-button">
-                        <p>Home</p>
-                    </div>
-                    <div class="header-button">
-                        <p>CV</p>
-                    </div>
-                    <div class="header-button">
-                        <p>Projects</p>
-                    </div>
-                    <div class="header-button">
-                        <p>Contact</p>
-                    </div>
-                    
-                    <div class="header-button">
-                        <p>Games</p>
-                    </div>
+                <div id="rightHeader">
+                    <nav>
+                        <li class="headerButton" onclick="changeSection(0)">Home</li>
+                        <li class="headerButton" onclick="changeSection(1)">Skills</li>
+                        <li class="headerButton" onclick="changeSection(2)">Projects</li>
+                        <li class="headerButton" onclick="changeSection(3)">Games</li>
+                        <li class="headerButton" onclick="changeSection(4)">CV</li>
+                        <li class="headerButton" onclick="changeSection(5)">Contact</li>
+                    </nav>
                 </div>
             </div>
         </header>
 
         <!-- Main Content -->
         <main>
-            <img src="resources/umarLogoV3.png" width="100px" height="100px" />
-            
-            <h3>// Hello World!</h3>
-            <br>
-            
-            <h1>I'm <span>Umar Rajput</span></h1>
-            <div id="typing-animation"></div>
-            <br>
-
-            <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>
-            <br>
-           
+            <div id="contentWrapper">
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer">
+                        <img src="resources/umarLogoV3.png" width="100px" height="100px" alt="Logo" />
+                        <h3>// Hello World!</h3>
+                        <h1>I'm <span>Umar Rajput</span></h1>
+                        <div id="typing-animation">a</div>
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                    </div>
+                </section>
+                
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer" style="background-color: rgb(180, 235, 109);">
+                        <h1>Skills and Languages</h1>
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                    </div>
+                </section>
+                
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer" style="background-color: rgb(173, 18, 127);">
+                        <h1>Projects</h1>
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                    </div>
+                </section>
+                
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer" style="background-color: rgb(57, 228, 199);">
+                        <h1>Games</h1>
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                    </div>
+                </section>
+                
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer" style="background-color: rgb(226, 141, 30);">
+                        <h1>CV</h1>
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                    </div>
+                </section>
+                
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer" style="background-color: rgb(63, 226, 30);">
+                        <h1>Contact</h1>
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                    </div>
+                </section>
+                
+            </div>
         </main>
 
         <!-- Footer Section -->
