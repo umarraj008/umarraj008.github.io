@@ -16,6 +16,7 @@
 body {
     background-color: #f1f1f1;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Scrollbar */
@@ -41,7 +42,7 @@ main {
 }
 
 /* main hello world text */
-main h3 {
+main h3#helloWorld {
     color: var(--accent-blue);
 }
 
@@ -63,7 +64,7 @@ main #contentWrapper {
     display: flex;
     flex-direction: row;
     transform: translateX(0%);
-    transition: 0.2s ease-in-out;
+    transition: 0.4s cubic-bezier(1, 0, 0, 1);
 }
 
 #contentWrapper .sectionItem {
@@ -75,9 +76,20 @@ main #contentWrapper {
 
 #contentWrapper .sectionItem #sectionInnerContainer {
     width: var(--content-max-width);
+    max-height: 75vh;
     background-color: blue;
     padding: 15px;
     border-radius: 15px;
+}
+
+#contentWrapper .sectionItem #sectionInnerContainer .scrollable {
+    width: 100%;
+    margin-top: 5px;
+    background-color: red;
+    max-height: 65vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 /* typing animation */

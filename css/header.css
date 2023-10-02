@@ -67,8 +67,6 @@ header #innerHeader {
     border-radius: 30px;
     margin-left: 5px;
     margin-right: 5px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
 }
 .headerButton:first-child {
     margin-left: 10px;
@@ -78,4 +76,6 @@ header #innerHeader {
 }
 .headerButton:hover {
     background-color: black;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
