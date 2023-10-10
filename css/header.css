@@ -1,0 +1,81 @@
+/* outer header container */
+header {
+    background-color: red;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+/* inner header container */
+header #innerHeader {
+    background-color: purple;
+    max-width: var(--content-max-width);
+    min-width: max-content;
+    height: 70px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* header left side */
+#innerHeader #leftHeader {
+    background-color: green;
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+/* header logo */
+#innerHeader #leftHeader img {
+    object-fit: contain;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* header logo title*/
+#innerHeader #leftHeader h1 {
+    margin: 10px;
+    white-space: nowrap;
+}
+
+/* header right side */
+#innerHeader #rightHeader {
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+/* header nav container */
+#rightHeader nav {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    margin-left: 0px;
+}
+
+/* header button */
+.headerButton {
+    text-align: center;
+    background-color: pink;
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.headerButton:first-child {
+    margin-left: 10px;
+}
+.headerButton:last-child {
+    margin-right: 10px;
+}
+.headerButton:hover {
+    background-color: black;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}

@@ -1,67 +1,242 @@
 <!DOCTYPE html>
-<html lang="en-UK">
+<html lang="en-UK" data-theme="light">
 
     <!-- Head Section -->
     <head>
         <!-- TEMPORARY SCRIPT TO REDIRECT TO MAINTAINANCE PAGE -->
-        <script>location.href = "maintenance.html";</script>
+        <!-- <script>location.href = "maintenance.html";</script> -->
         <!------------------------------------------------------->
         <meta charset="utf-8">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="description" content="My personal website that displays my work and projects">
         <meta name="author" content="Umar Rajput">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.css">
         <link rel="icon" href="./resources/umarLogoV3.ico" type="image/gif" sizes="16x16">
         <title>Umar Rajput</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/skills.css">
+        <link rel="stylesheet" href="./css/projects.css">
+        <script src="js/typingAnimation.js"></script>
+        <!-- <script src="js/sectionManager.js"></script> -->
+        <script src="js/projectManager.js"></script>
     </head>
 
     <!-- Body Section -->
     <body>
 
         <!-- Header Section -->
-        <header>
-            <div id="header-inner-container">
-                <div id="header-left">
-                    <img id="header-logo" src="resources/umarLogoV3.png" width="50px" height="50px" />
-                    <h1 id="header-logo-text">Umar</h1>
+        <!-- <header>
+            <div id="innerHeader">
+                <div id="leftHeader">
+                    <img src="resources/umarLogoV3.png" width="100px" height="100px" alt="Logo" />
+                    <h1>Umar Rajput</h1>
                 </div>
-
-                <div id="header-line-seperator"></div>
-
-                <div id="header-right">
-                    <div class="header-button">
-                        <p>Home</p>
-                    </div>
-                    <div class="header-button">
-                        <p>CV</p>
-                    </div>
-                    <div class="header-button">
-                        <p>Projects</p>
-                    </div>
-                    <div class="header-button">
-                        <p>Contact</p>
-                    </div>
-                    
-                    <div class="header-button">
-                        <p>Games</p>
-                    </div>
+                <div id="rightHeader">
+                    <nav>
+                        <li class="headerButton" onclick="changeSection(0)">Home</li>
+                        <li class="headerButton" onclick="changeSection(1)">Skills</li>
+                        <li class="headerButton" onclick="changeSection(2)">Projects</li>
+                        <li class="headerButton" onclick="changeSection(3)">Games</li>
+                        <li class="headerButton" onclick="changeSection(4)">CV</li>
+                        <li class="headerButton" onclick="changeSection(5)">Contact</li>
+                    </nav>
                 </div>
             </div>
-        </header>
+        </header> -->
 
         <!-- Main Content -->
         <main>
-            <h1>Umar Rajput</h1>
+
+            
+
+            <div id="contentWrapper">
+
+                <!-- THEME BUTTON -->
+                <!-- <div id="themeButtonContainer">
+                    <div id="themeButton">
+                        <div id="dot">
+                            <img src="resources/light.png" width="100px" height="100px" alt="theme">
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- HOME SECTION -->
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer">
+                        <div id="mainWrapper">
+                            <div id="leftSection">
+                                <img src="resources/umarLogoV3.png" width="100px" height="100px" alt="Logo" />
+                            </div>
+                            <div id="rightSection">
+                                <div id="topSection">
+                                    <h3>// Hello World!</h3>
+                                    <br>
+                                    
+                                    <h1>I'm <span>Umar Rajput</span></h1>
+                                    <div id="typing-animation">a</div>
+                                    <br>
+                                    
+                                    <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                                    <br>
+                                </div>
+
+                                <div id="button-container">
+                                    <div class="button" onclick="window.open('https://www.linkedin.com/in/umar-rajput/', '_blank')">
+                                        <img src="resources/linkedin.png" width="50px" height="50px" />
+                                        <a href="https://www.linkedin.com/in/umar-rajput/" target="_blank" rel="noopener noreferrer">umar-rajput</a>
+                                    </div>
+                                    <div class="button" onclick="window.open('https://github.com/umarraj008/', '_blank')">
+                                        <img src="resources/github.png" width="50px" height="50px" />
+                                        <a href="https://github.com/umarraj008/" target="_blank" rel="noopener noreferrer">umarraj008</a>
+                                    </div>
+                                    <div class="button" onclick="window.open('resources/Umar Rajput CV 2023.pdf', '_blank')">
+                                        <img src="resources/cv.png" width="50px" height="50px" />
+                                        <a href="resources/Umar Rajput CV 2023.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                                    </div>
+                                    <div class="button" onclick="window.open('mailto: umar.rajput02@gmail.com')">
+                                        <img src="resources/mail.png" width="50px" height="50px" />
+                                        <a href="mailto: umar.rajput02@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- LANGUAGES SECTION -->
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer">
+                        <div class="skillsWrapper">
+                            <h2>Languages</h2>
+                            <div class="skillsContainer">
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java">Java</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">JavaScript</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">HTML</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">CSS</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">PHP</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">NodeJS</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">SQL</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="PYTHON">PYTHON</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- TOOLS AND IDE SECTION -->
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer">
+                        <div class="skillsWrapper">
+                            <h2>Tools and IDE</h2>
+                            <div class="skillsContainer">
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">VS Code</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio">Visual Studio</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github">Github</p></div>
+                                <div class="skillItem"><img src="https://cdn.freebiesupply.com/logos/large/2x/eclipse-11-logo-png-transparent.png" alt="Eclipse">Eclipse</p></div>
+                                <div class="skillItem"><img src="https://cdn.icon-icons.com/icons2/1381/PNG/512/mysqlworkbench_93532.png" alt="MySQL Workbench">MySQL Workbench</p></div>
+                                <div class="skillItem"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/phpmyadmin_logo_icon_168050.png" alt="phpMyAdmin">phpMyAdmin</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio">Android Studio</p></div>
+                                <div class="skillItem"><img src="https://cdn.freebiesupply.com/logos/large/2x/xampp-logo-png-transparent.png" alt="Xampp">Xampp</p></div>
+                                <div class="skillItem"><img src="https://cdn.icon-icons.com/icons2/1156/PNG/512/1486565573-microsoft-office_81557.png" alt="Microsoft Office Suite">Microsoft Office Suite</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- GRAPHICS SECTION -->
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer">
+                        <div class="skillsWrapper">
+                            <h2>Graphics</h2>
+                            <div class="skillsContainer">
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender">Blender</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Adobe Photoshop">Adobe Photoshop</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Adobe Illustrator">Adobe Illustrator</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" alt="Gimp">Gimp</p></div>
+                                <div class="skillItem"><img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/davinci_resolve_macos_bigsur_icon_190261.png" alt="DaVinci Resolve">DaVinci Resolve</p></div>
+                                <div class="skillItem"><img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/final_cut_pro_alt_macos_bigsur_icon_190176.png" alt="Final Cut Pro X">Final Cut Pro</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- PROJECT SECTION -->
+                <section class="sectionItem">
+                    <div id="sectionInnerContainer" class="projectContainer">
+                        <h1>Projects</h1>
+                            
+                        <!-- PROJECT ITEM TEMPLATE -->
+                        <!-- <div class="projectItem">
+                            <div id="leftSection">
+                                <img src="resources/umarLogoV3.png" alt="">
+                            </div>
+                            <div id="rightSection">
+                                <div id="topSection">
+                                    <h2>Project Title</h2>
+                                    <p>project description goes here...</p>
+                                    <br>
+
+                                    <div id="projectButtonContainer">
+                                        <div class="projectButton">GitHub</div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div id="bottomSection">
+                                    <h3>Tech Stack</h3>
+                                    <div id="techStackContainer">
+                                        <div class="techStackItem"><p>Item 1</p></div>
+                                        <div class="techStackItem"><p>Item 2</p></div>
+                                        <div class="techStackItem"><p>Item 3</p></div>
+                                        <div class="techStackItem"><p>Item 3</p></div>
+                                        <div class="techStackItem"><p>Item 3</p></div>
+                                        <div class="techStackItem"><p>Item 3</p></div>
+                                        <div class="techStackItem"><p>Item 3</p></div>
+                                        <div class="techStackItem"><p>Item 3</p></div>
+                                        <div class="techStackItem"><p>Item 3</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                            
+                    </div>
+                </section>
+                
+                <!-- CV SECTION -->
+                <!-- <section class="sectionItem">
+                    <div id="sectionInnerContainer">
+                        <h1>CV</h1>
+                        <div class="scrollable">
+                            <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        </div>                     
+                    </div>
+                </section> -->
+                 
+                <!-- GAMES SECTION -->
+                <!-- <section class="sectionItem">
+                    <div id="sectionInnerContainer">
+                        <h1>Games</h1>
+                        <div class="scrollable">
+                            <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        </div>
+                    </div>
+                </section> -->
+
+            </div>
         </main>
 
         <!-- Footer Section -->
         <br clear="all">
         <footer>
-
+            <div id="footer-outer-container">
+                <div id="footer-inner-container">
+                    <img src="resources/umarLogoV3.png" width="50px" height="50px">
+                    <p id="copyright">Copyright © Umar Rajput</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

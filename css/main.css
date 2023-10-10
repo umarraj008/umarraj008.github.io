@@ -1,130 +1,140 @@
-
-* {
-    margin: 0 auto; 
-    padding: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    color: black;
+/* MAIN WRAPPER */
+#mainWrapper {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
 }
 
-body {
-    background-color: #f1f1f1;
-    overflow-x: hidden;
+/* LEFT SECTION */
+#mainWrapper #leftSection {
+    width: 60%;
+    margin-left: 0px;
+    /* background-color: aqua; */
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* header */
-header {
-    background-color: red;
-}
-
-/* header line seperator */
-header div#header-line-seperator {
-    width: 2px;
+/* MAIN IMAGE */
+#mainWrapper #leftSection img {
+    width: 100%;
     height: 100%;
-    background-color: black;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* RIGHT SECTION */
+#mainWrapper #rightSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
     margin-left: 15px;
 }
 
-/* header inner container */
-header div#header-inner-container {
-    background-color: pink;
-    width: max-content;
-    display: flex;
-    padding: 10px;
-    box-sizing: border-box;
-    height: 70px;
-    align-items: center;
-    margin-left: 15px;
+/* RIGHT TOP SECTION */
+#mainWrapper #rightSection #topSection {
+    height: 100%;
 }
 
-/* header left side logo and text container */
-header div#header-inner-container div#header-left {
-    background-color: blue;
-    width: max-content;
-    display: flex;
-    align-items: center;
+/* HELLO WORLD TEXT */
+#mainWrapper #rightSection #topSection h3 {
+    margin-left: 0px;
+    color: var(--accent-blue);
 }
 
-/* header logo */
-header div#header-inner-container div#header-left img#header-logo {
+/* MAIN TITLE */
+#mainWrapper #rightSection #topSection h1 {
+    margin-left: 0px;
+    font-size: 60px;
+}
+
+/* MAIN TEXT */
+#mainWrapper #rightSection #topSection p {
+    margin-left: 0px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* MAIN TITLE COLOR SPAN */
+#mainWrapper #rightSection #topSection h1 span {
+    color: var(--accent-blue);
+    text-shadow: 0px 0px 25px rgba(46, 160, 255, 0.5);
+}
+
+/* BUTTON CONTAINER */
+#mainWrapper #rightSection #button-container {
+    height: max-content;
+    display: flex;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+/* BUTTON */
+#mainWrapper #rightSection #button-container .button {
+    width: 100%;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    height: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    /* border: solid 2px black; */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
     float: left;
 }
-
-/* header logo text */
-header div#header-inner-container div#header-left h1#header-logo-text {
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
+#mainWrapper #rightSection #button-container .button:first-child {
+    margin-left: 0px;
+}
+#mainWrapper #rightSection #button-container .button:last-child {
+    margin-right: 0px;
 }
 
-/* header right side button container */
-header div#header-inner-container div#header-right {
-    background-color: lime;
-    width: max-content;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-}
-
-/* header button */
-header div#header-inner-container div#header-right div.header-button {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 15px;
-    height: 100%;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    border: solid 2px black;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: orange;
+/* BUTTON HOVER */
+#mainWrapper #rightSection #button-container .button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: var(--accent-blue);
+    box-shadow: 0px 0px 25px rgba(46, 160, 255, 1);
     transition: 0.2s ease-in-out;
 }
 
-/* first header button */
-header div#header-inner-container div#header-right div.header-button:first-child {
-    margin-left: 30px;
+/* BUTTON IMAGE */
+#mainWrapper #rightSection #button-container .button img {
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
-/* last header button */
-header div#header-inner-container div#header-right div.header-button:last-child {
-    margin-right: 30px;
+/* BUTTON TEXT */
+#mainWrapper #rightSection #button-container .button a {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 0px;
+    font-size: 14px;
 }
 
-/* header button hover */
-header div#header-inner-container div#header-right div.header-button:hover {
-    background-color: white;
-    cursor: pointer;
+/* TYPING ANIMATION */
+#typing-animation {
+    height: 70px;
+    margin-left: 0px;
+    width: max-content;
+    animation: blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Roboto', monospace;
+    /* font-family: monospace; */
+    font-size: 60px;
+    font-weight: 400;
 }
 
-/* Main */
-main {
-    background-color: aquamarine;
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-/* footer */
-footer {
-    width: 100%;
-    display: block;
-    height: 300px;
-    float: left;
+/* TYPING ANIMATION */
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }
