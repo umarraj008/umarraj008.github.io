@@ -1,10 +1,13 @@
 var charCounter = 0;
 var textIndex = 0;
+// var text = [
+//     " Software Developer", 
+//     " Java Developer", 
+//     " Web Developer", 
+//     " Full Stack Developer"
+// ];
 var text = [
     " Software Developer", 
-    " Java Developer", 
-    " Web Developer", 
-    " Full Stack Developer"
 ];
 
 function type() {

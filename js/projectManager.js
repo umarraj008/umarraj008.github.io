@@ -44,7 +44,7 @@ const projects = [
     
 ];
 
-function addProjectsToList() {
+const addProjectsToList = function() {
     projects.forEach(p => {
         let br = document.createElement("br");
 
@@ -121,13 +121,19 @@ function addProjectsToList() {
         projectItem.appendChild(leftSection);
         projectItem.appendChild(rightSection);
 
-        console.log(projectItem);
+        // console.log(projectItem);
 
-        let projectsContainer = document.getElementById("projectsContainer");
+        let projectsContainer = document.getElementsByClassName("projectContainer")[0];
         projectsContainer.appendChild(projectItem);
     });
 }
 
+const updateCopyright = function() {
+    let date = new Date();
+    document.getElementById("copyright").innerHTML = "Copyright ©" + date.getFullYear() + " Umar Rajput";
+}
+
 window.addEventListener("DOMContentLoaded", () => {
     addProjectsToList();
+    updateCopyright();
 });

@@ -1,98 +1,123 @@
-
-* {
-    margin: 0 auto; 
-    padding: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    color: black;
+/* MAIN WRAPPER */
+#mainWrapper {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
 }
 
-:root {
-    /* --accent-blue: #61b7ff; */
-    --accent-blue: #2EA0FF;
-    --content-max-width: 60%;
-    /* --accent-blue: #FFA961; */
+/* LEFT SECTION */
+#mainWrapper #leftSection {
+    width: 60%;
+    margin-left: 0px;
+    /* background-color: aqua; */
 }
 
-body {
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    overflow-y: hidden;
+/* MAIN IMAGE */
+#mainWrapper #leftSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+/* RIGHT SECTION */
+#mainWrapper #rightSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    margin-left: 15px;
 }
 
-/* Main */
-main {
-    background-color: aquamarine;
-    /* margin-left: 15px;
-    margin-right: 15px; */
-    min-height: calc(100vh);
+/* RIGHT TOP SECTION */
+#mainWrapper #rightSection #topSection {
+    height: 100%;
 }
 
-/* main hello world text */
-main h3#helloWorld {
+/* HELLO WORLD TEXT */
+#mainWrapper #rightSection #topSection h3 {
+    margin-left: 0px;
     color: var(--accent-blue);
 }
 
-/* main title */
-main h1 {
+/* MAIN TITLE */
+#mainWrapper #rightSection #topSection h1 {
+    margin-left: 0px;
     font-size: 60px;
 }
 
-/* right container main title span */
-main h1 span {
+/* MAIN TEXT */
+#mainWrapper #rightSection #topSection p {
+    margin-left: 0px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* MAIN TITLE COLOR SPAN */
+#mainWrapper #rightSection #topSection h1 span {
     color: var(--accent-blue);
     text-shadow: 0px 0px 25px rgba(46, 160, 255, 0.5);
 }
 
-/* content wrapper container */
-main #contentWrapper {
-    background-color: darkorchid;
-    height: 100%;
+/* BUTTON CONTAINER */
+#mainWrapper #rightSection #button-container {
+    height: max-content;
     display: flex;
-    flex-direction: row;
-    transform: translateX(0%);
-    transition: 0.4s cubic-bezier(1, 0, 0, 1);
-}
-
-#contentWrapper .sectionItem {
-    min-width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    background-color: lime;
-}
-
-#contentWrapper .sectionItem #sectionInnerContainer {
-    width: var(--content-max-width);
-    max-height: 75vh;
-    background-color: blue;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-#contentWrapper .sectionItem #sectionInnerContainer .scrollable {
     width: 100%;
-    margin-top: 5px;
-    background-color: red;
-    max-height: 65vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    box-sizing: border-box;
+    margin-bottom: 0px;
 }
 
-/* typing animation */
+/* BUTTON */
+#mainWrapper #rightSection #button-container .button {
+    width: 100%;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    height: 20px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    /* border: solid 2px black; */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    float: left;
+}
+#mainWrapper #rightSection #button-container .button:first-child {
+    margin-left: 0px;
+}
+#mainWrapper #rightSection #button-container .button:last-child {
+    margin-right: 0px;
+}
+
+/* BUTTON HOVER */
+#mainWrapper #rightSection #button-container .button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: var(--accent-blue);
+    box-shadow: 0px 0px 25px rgba(46, 160, 255, 1);
+    transition: 0.2s ease-in-out;
+}
+
+/* BUTTON IMAGE */
+#mainWrapper #rightSection #button-container .button img {
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* BUTTON TEXT */
+#mainWrapper #rightSection #button-container .button a {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 0px;
+    font-size: 14px;
+}
+
+/* TYPING ANIMATION */
 #typing-animation {
     height: 70px;
     margin-left: 0px;
@@ -107,7 +132,7 @@ main #contentWrapper {
     font-weight: 400;
 }
 
-/* Typing animation */
+/* TYPING ANIMATION */
 @keyframes blink {
     50% {
         border-color: transparent
