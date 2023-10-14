@@ -18,6 +18,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    transition: 0.2s ease-in-out;
 }
 
 /* RIGHT SECTION */
@@ -37,7 +38,7 @@
 /* HELLO WORLD TEXT */
 #mainWrapper #rightSection #topSection h3 {
     margin-left: 0px;
-    color: var(--accent-blue);
+    color: var(--MAIN-ACCENT);
 }
 
 /* MAIN TITLE */
@@ -55,8 +56,8 @@
 
 /* MAIN TITLE COLOR SPAN */
 #mainWrapper #rightSection #topSection h1 span {
-    color: var(--accent-blue);
-    text-shadow: 0px 0px 25px rgba(46, 160, 255, 0.5);
+    color: var(--MAIN-ACCENT);
+    text-shadow: 0px 0px 25px var(--MAIN-ACCENT-SHADOW);
 }
 
 /* BUTTON CONTAINER */
@@ -78,8 +79,8 @@
     margin-bottom: 10px;
     border-radius: 30px;
     /* border: solid 2px black; */
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    /* background-color: orange; */
+    box-shadow: 0px 0px 25px var(--MAIN-SHADOW);
+    background-color: var(--MAIN-BUTTON-BG);
     display: flex;
     align-items: center;
     float: left;
@@ -95,9 +96,8 @@
 #mainWrapper #rightSection #button-container .button:hover {
     text-decoration: underline;
     cursor: pointer;
-    background-color: var(--accent-blue);
-    box-shadow: 0px 0px 25px rgba(46, 160, 255, 1);
-    transition: 0.2s ease-in-out;
+    background-color: var(--MAIN-BUTTON-HOVER);
+    box-shadow: 0px 0px 25px var(--MAIN-BUTTON-HOVER);;
 }
 
 /* BUTTON IMAGE */
@@ -137,4 +137,14 @@
     50% {
         border-color: transparent
     }
+}
+
+@keyframes spin {
+    0% { rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
+@keyframes reverse-spin {
+    0% { rotate: 360deg;}
+    100% {rotate: 0deg;}
 }
