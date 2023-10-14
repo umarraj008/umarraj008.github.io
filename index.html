@@ -3,6 +3,7 @@
 
     <!-- Head Section -->
     <head>
+        <script type="module">loadTheme()</script>
         <!-- TEMPORARY SCRIPT TO REDIRECT TO MAINTAINANCE PAGE -->
         <!-- <script>location.href = "maintenance.html";</script> -->
         <!------------------------------------------------------->
@@ -21,9 +22,12 @@
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/skills.css">
         <link rel="stylesheet" href="./css/projects.css">
+        <link rel="stylesheet" href="./css/games.css">
         <script src="js/typingAnimation.js"></script>
         <!-- <script src="js/sectionManager.js"></script> -->
         <script src="js/projectManager.js"></script>
+        <script src="js/themeManager.js"></script>
+        <script src="js/codeManager.js"></script>
     </head>
 
     <!-- Body Section -->
@@ -56,25 +60,24 @@
 
             <div id="contentWrapper">
 
-                <!-- THEME BUTTON -->
-                <!-- <div id="themeButtonContainer">
-                    <div id="themeButton">
-                        <div id="dot">
-                            <img src="resources/light.png" width="100px" height="100px" alt="theme">
-                        </div>
-                    </div>
-                </div> -->
-
                 <!-- HOME SECTION -->
                 <section class="sectionItem">
                     <div id="sectionInnerContainer">
                         <div id="mainWrapper">
                             <div id="leftSection">
-                                <img src="resources/umarLogoV3.png" width="100px" height="100px" alt="Logo" />
+                                <img id="mainImg" src="resources/umarLogoV3.png" width="100px" height="100px" alt="Logo" />
                             </div>
                             <div id="rightSection">
                                 <div id="topSection">
-                                    <h3>// Hello World!</h3>
+                                    <!-- THEME BUTTON -->
+                                    <div id="themeButtonContainer">
+                                        <h3>// Hello World!</h3>
+                                        <div id="themeButton" onclick="changeThemeClick()" style="margin-left: 0px;">
+                                            <div id="dot">
+                                                <img id="dotImg" src="resources/light.png" width="100px" height="100px" alt="theme">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <br>
                                     
                                     <h1>I'm <span>Umar Rajput</span></h1>
@@ -86,21 +89,21 @@
                                 </div>
 
                                 <div id="button-container">
-                                    <div class="button" onclick="window.open('https://www.linkedin.com/in/umar-rajput/', '_blank')">
+                                    <div id="b1" class="button" onclick="window.open('https://www.linkedin.com/in/umar-rajput/', '_blank')">
                                         <img src="resources/linkedin.png" width="50px" height="50px" />
                                         <a href="https://www.linkedin.com/in/umar-rajput/" target="_blank" rel="noopener noreferrer">umar-rajput</a>
                                     </div>
-                                    <div class="button" onclick="window.open('https://github.com/umarraj008/', '_blank')">
+                                    <div id="b2" class="button" onclick="window.open('https://github.com/umarraj008/', '_blank')">
                                         <img src="resources/github.png" width="50px" height="50px" />
                                         <a href="https://github.com/umarraj008/" target="_blank" rel="noopener noreferrer">umarraj008</a>
                                     </div>
-                                    <div class="button" onclick="window.open('resources/Umar Rajput CV 2023.pdf', '_blank')">
+                                    <div id="b3" class="button" onclick="window.open('resources/Umar Rajput CV 2023.pdf', '_blank')">
                                         <img src="resources/cv.png" width="50px" height="50px" />
                                         <a href="resources/Umar Rajput CV 2023.pdf" target="_blank" rel="noopener noreferrer">CV</a>
                                     </div>
-                                    <div class="button" onclick="window.open('mailto: umar.rajput02@gmail.com')">
+                                    <div id="b4" class="button" onclick="window.open('mailto: umar.rajput02@gmail.com')">
                                         <img src="resources/mail.png" width="50px" height="50px" />
-                                        <a href="mailto: umar.rajput02@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+                                        <a href="mailto: umar.rajput02@gmail.com" target="_blank" rel="noopener noreferrer">umar.rajput02@gmail.com</a>
                                     </div>
                                 </div>
                             </div>    
@@ -153,9 +156,9 @@
                         <div class="skillsWrapper">
                             <h2>Graphics</h2>
                             <div class="skillsContainer">
-                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender">Blender</p></div>
-                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Adobe Photoshop">Adobe Photoshop</p></div>
-                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Adobe Illustrator">Adobe Illustrator</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" style="background: radial-gradient(circle at 65% 55%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 25%);">Blender</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Adobe Photoshop" style="background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%);">Adobe Photoshop</p></div>
+                                <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Adobe Illustrator" style="background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%);">Adobe Illustrator</p></div>
                                 <div class="skillItem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" alt="Gimp">Gimp</p></div>
                                 <div class="skillItem"><img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/davinci_resolve_macos_bigsur_icon_190261.png" alt="DaVinci Resolve">DaVinci Resolve</p></div>
                                 <div class="skillItem"><img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/final_cut_pro_alt_macos_bigsur_icon_190176.png" alt="Final Cut Pro X">Final Cut Pro</p></div>
@@ -216,14 +219,24 @@
                 </section> -->
                  
                 <!-- GAMES SECTION -->
-                <!-- <section class="sectionItem">
+                <section id="gameSection" class="sectionItem" style="display: none;">
                     <div id="sectionInnerContainer">
                         <h1>Games</h1>
-                        <div class="scrollable">
-                            <p>I'm passionate about programming, software development, and computer science, I am a dedicated professional with a keen interest in creating innovative solutions. With a strong foundation in programming languages and frameworks, I am driven to deliver high-quality software applications.</p>                     
+                        <div id="gameContainer">
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>X and O</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Flappy Bird</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Tetris</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Stacker</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Game Snake</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Tennis For 2</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Shooter</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Clicker</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Sonic</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Isometric Engine Demo</p></div>
+                            <div class="game"><img src="resources/umarLogoV3.png" alt="Game Image"><p>Elemental 4</p></div>
                         </div>
                     </div>
-                </section> -->
+                </section>
 
             </div>
         </main>
