@@ -55,7 +55,7 @@ addEventListener("keydown", (e) => {
 
     for (i = 0; i < keys.length || i > code.length; i++) {
         if (keys[i] == code[i]) {
-            if (keys.length == code.length) {
+            if (keys.length == code.length && i == code.length-1) {
                 console.log("CODE ACTIVATED");
                 gamesLauncher();
                 keys = [];
