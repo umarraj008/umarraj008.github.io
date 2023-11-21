@@ -1,11 +1,12 @@
 class Project {
-    constructor(title, date, description, image, alt, github, tech) {
+    constructor(title, date, description, image, alt, github, release, tech) {
         this.title = title;
         this.date = date;
         this.description = description;
         this.image = image;
         this.alt = alt;
         this.github = github;
+        this.release = release;
         this.tech = tech;
     }
 }
@@ -13,13 +14,36 @@ class Project {
 const projects = [
 
     new Project(
+        "Photo Gallery Display App", 
+        "Nov 2023", 
+        "A web app that displays your photos on a display such as old iPad",
+        "resources/wip.png", 
+        "Brick Breaker Image", 
+        "https://github.com/umarraj008/Photo-Gallery-Display-App", 
+        "https://github.com/umarraj008/Photo-Gallery-Display-App/releases/latest", 
+        ["HTML5","CSS3","JavaScript","Node.JS","NPM","Express.JS","Socket.IO", "GitHub"]
+    ),
+
+    new Project(
+        "Java Brick Breaker Game", 
+        "Nov 2023", 
+        "A Java implementation of a brick breaker game",
+        "resources/projects/BrickBreaker.png", 
+        "Brick Breaker Image", 
+        "https://github.com/umarraj008/BrickBreaker", 
+        "https://github.com/umarraj008/BrickBreaker/releases/latest", 
+        ["Java","Mavern","JFrame","JPanel","GitHub"]
+    ),
+
+    new Project(
         "Cool Surveys Web App", 
         "Apr 2023", 
         "As my final year project, this website is a live survey/focus group tool. This tool allows users to create surveys, and distribute them and gain live data and results on their surveys. In addition, users will be able to gain access to surveys and participate effectively through the web app. I aimed to create an easy and simple to use web application that allows anyone to create or participate in surveys, and easily conduct research.", 
         "resources/projects/CoolSurveys.png", 
-        "ParkIt Image", 
+        "Cool Surveys Image", 
         "https://github.com/umarraj008/Survey-Tool", 
-        ["HTML","CSS","JavaScript","PHP","MySQL","Charts.js","GitHub"]
+        "https://github.com/umarraj008/Survey-Tool/releases/latest", 
+        ["HTML5","CSS3","JavaScript","PHP","MySQL","Charts.js","GitHub"]
     ),
 
     new Project(
@@ -29,6 +53,7 @@ const projects = [
         "https://github.com/umarraj008/Car-Parking-App/blob/master/app/src/main/app_logo_icon-playstore.png?raw=true", 
         "ParkIt Image", 
         "https://github.com/umarraj008/Car-Parking-App", 
+        "https://github.com/umarraj008/Car-Parking-App/releases/latest", 
         ["Java","Android Studio",]
     ),
 
@@ -39,7 +64,8 @@ const projects = [
         "https://raw.githubusercontent.com/umarraj008/Elemental4Game/Minification/Source/resources/images/githubLogopng.png", 
         "Elemental 4 Image", 
         "https://github.com/umarraj008/Elemental4Game", 
-        ["HTML","CSS","JavaScript","NodeJS","Express","Socket.io","MySQL","GitHub"]
+        "https://github.com/umarraj008/Elemental4Game/releases/latest", 
+        ["HTML5","CSS3","JavaScript","Node.JS","Express.js","Socket.IO","MySQL","GitHub"]
     ),
     
 ];
@@ -78,8 +104,13 @@ const addProjectsToList = function() {
         
         let projectButton = document.createElement("div");
         projectButton.setAttribute("class", "projectButton");
-        projectButton.innerHTML = "GitHub";
+        projectButton.innerHTML = "GitHub Repository";
         projectButton.onclick = function() { window.open(p.github, '_blank'); };
+        
+        let projectReleaseButton = document.createElement("div");
+        projectReleaseButton.setAttribute("class", "projectButton");
+        projectReleaseButton.innerHTML = "Latest Release";
+        projectReleaseButton.onclick = function() { window.open(p.release, '_blank'); };
 
         let bottomSection = document.createElement("div");
         bottomSection.setAttribute("id", "bottomSection");
@@ -105,6 +136,7 @@ const addProjectsToList = function() {
         bottomSection.appendChild(techStackContainer);
         
         projectButtonContainer.appendChild(projectButton);
+        projectButtonContainer.appendChild(projectReleaseButton);
 
         topSection.appendChild(projectTitle);
         topSection.appendChild(projectDate);

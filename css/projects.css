@@ -60,7 +60,7 @@
     background-color: var(--PROJECT-BUTTON-BG);
     padding: 10px;
     border-radius: 5px;
-    width: 100px;
+    width: 140px;
     height: 20px;
     text-align: center;
     margin-left: 0px;
@@ -87,6 +87,7 @@
     list-style: none;
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: 5px;
     /* background-color: blueviolet; */
 }
 
@@ -100,6 +101,6 @@
     margin-right: 5px;
 }
 
-.projectItem #techStackContainer li:first-child {
+.projectItem #techStackContainer .techStackItem:first-child {
     margin-left: 0px;
 }
