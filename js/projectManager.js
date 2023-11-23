@@ -17,7 +17,7 @@ const projects = [
         "Photo Gallery Display App", 
         "Nov 2023", 
         "A web app that displays your photos on a display such as old iPad",
-        "resources/wip.png", 
+        "https://github.com/umarraj008/Photo-Gallery-Display-App/blob/main/ProjectImages/diagram.png", 
         "Brick Breaker Image", 
         "https://github.com/umarraj008/Photo-Gallery-Display-App", 
         "https://github.com/umarraj008/Photo-Gallery-Display-App/releases/latest", 
