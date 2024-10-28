@@ -20,6 +20,7 @@ const TypingAnimation = () => {
     "a Python Developer",
     "a Android Developer",
     "a Web Developer",
+    "a Game Developer",
   ];
 
   useEffect(() => {

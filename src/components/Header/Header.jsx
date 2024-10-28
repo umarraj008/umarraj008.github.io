@@ -53,6 +53,7 @@ function Header(props) {
             <a href="#projects" onClick={(e) => scrollToSection(e,'projects')}>Projects</a>
             <a href="#cv" onClick={(e) => scrollToSection(e,'cv')}>CV</a>
             <a href="#contact" onClick={(e) => scrollToSection(e,'contact')}>Contact</a>
+            <a href="#games" onClick={(e) => scrollToSection(e,'games')}>Games&nbsp;<span class="material-symbols-outlined">open_in_new</span></a>
         </nav>
         <div className="social-container">
           <a alt="GitHub Link" href="https://github.com/umarraj008/" target='_blank' rel="noopener noreferrer" className='git-button'><img src='/github.svg' /></a>

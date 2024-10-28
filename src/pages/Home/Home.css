@@ -23,7 +23,7 @@
     align-items: center;
     border: none;
     height: 600px;
-    /* background-color: red; */
+    /* background-color: lime; */
   }
 
   /* Left Section */
@@ -34,7 +34,7 @@
     text-align: left;
     padding-left: 20px;
     /* background-color: red; */
-    /* height: 300px; */
+    height: 300px;
 
   }
 
@@ -81,14 +81,20 @@
     border: 2px solid var(--BORDER-COLOR);
     background-color: var(--BORDER-COLOR);
     color: white;
-    margin-top: auto;
-    flex: 1;
+    /* margin-top: auto; */
+    flex: 1;;
     /* box-shadow: 2px 3px black; */
     transition: 0.2s ease-in-out;  
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Button Icon */
+  #home .left-section a span {
+    color: white;
+    font-weight: bold;
   }
 
   /* Button Hover */

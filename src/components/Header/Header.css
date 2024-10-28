@@ -102,6 +102,11 @@ header .header-container {
   transition: 0.2s ease-in-out;  
 }
 
+/* Button Icon */
+.header-container .button-container a span {
+  color: white;
+}
+
 /* Button Hover */
 .header-container .button-container a:hover {
   transform: translate(2px, 3px);
