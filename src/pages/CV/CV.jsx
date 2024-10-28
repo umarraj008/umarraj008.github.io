@@ -1,16 +1,13 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import "./CV.css";
 
 function CV() {
   return (
-    <>
-      <Helmet>
-        <link rel="canonical" href="https://umarrajput.co.uk/cv" />
-        <title>CV | Umar Rajput</title>
-        <meta name="description" content="" />
-      </Helmet>
-      <div>CV</div>
-    </>
+    <section id="cv">
+      <div className='cv-container'>
+        <h1>CV</h1>
+      </div>
+    </section>
   )
 }
 

@@ -17,3 +17,12 @@
 @media (min-width: 1440px) {
   
 }
+
+footer {
+  border: 2px solid var(--BORDER-COLOR);
+  border-radius: 10px;
+  margin-top: 20px;
+  animation: fade-in 1s;
+  padding: 20px;
+  text-align: center;
+}

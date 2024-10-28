@@ -1,110 +1,157 @@
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+  
+}
+
+/* Tablet styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* Laptop styles (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  
+}
+
+/* Desktop styles (1440px and up) */
+@media (min-width: 1440px) {
+  
+}
+
 header {
-    display: flex;
-    flex-direction: row;
-    /* background-color: red; */
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-sizing: border-box;
-    border: 2px solid var(--BORDER-COLOR);
-    animation: fade-in 1s;
-    /* box-shadow: 2px 3px var(--BORDER-COLOR); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  animation: fade-in 1s;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--MAIN-BG);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  user-select: none;
+  /* height: 80px; */
+  /* background: linear-gradient(180deg, var(--MAIN-BG) 90%, rgba(0,0,0,0) 100%); */
+}
+
+/* Header Container */
+header .header-container {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--HEADER-BG);
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* border: 2px solid var(--BORDER-COLOR); */
 }
 
 /* Logo Container */
-header .logo-container {
-    display: flex;
-    flex-direction: row;
-    /* margin-right: auto; */
-    flex: 1;
-    align-items: center;
-    gap: 10px;
+.header-container .logo-container {
+  display: flex;
+  flex-direction: row;
+  /* margin-right: auto; */
+  flex: 1;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Logo Image */
-header .logo-container img {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
+.header-container .logo-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
 }
 
 /* Logo Title */
-header .logo-container h1 {
-    word-spacing: 99999999999px;
-    line-height: 1em;
-    font-size: 1.5em;
-    font-weight: bold;
+.header-container .logo-container h1 {
+  word-spacing: 99999999999px;
+  line-height: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
 }
 
 /* Button Container */
-header .button-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex: 1;
-    /* background-color: orange; */
+.header-container .button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex: 1;
+  /* background-color: orange; */
 }
 
 /* Button */
-header .button-container button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: transparent;
-    font-size: 1em;
-    border: 2px solid var(--BORDER-COLOR);
-    /* box-shadow: 2px 3px var(--BORDER-COLOR); */
-    transition: 0.2s ease-in-out;  
+.header-container .button-container a {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #25231a;
+  font-size: 1em;
+  /* border: 2px solid var(--BORDER-COLOR); */
+  /* box-shadow: 2px 3px var(--BORDER-COLOR); */
+  transition: 0.2s ease-in-out;  
+}
+
+/* Button Icon */
+.header-container .button-container a span {
+  color: white;
 }
 
 /* Button Hover */
-header .button-container button:hover {
-    transform: translate(2px, 3px);
-    box-shadow: 0px 0px var(--BORDER-COLOR);
-    background-color: rgba(0,0,0,0.1);
+.header-container .button-container a:hover {
+  transform: translate(2px, 3px);
+  box-shadow: 0px 0px var(--BORDER-COLOR);
+  background-color: rgba(0,0,0,0.1);
 }
 
 /* Social Container */
-header .social-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    flex: 1;
-    gap: 10px;
-    justify-content: right;
-    /* background-color: lime; */
+.header-container .social-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  flex: 1;
+  gap: 10px;
+  justify-content: right;
+  /* background-color: lime; */
 }
 
 /* Social Buttons */
-header .social-container a {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    overflow: hidden;
-    box-sizing: content-box;
-    color: var(--BORDER-COLOR);
-    background-color: var(--BORDER-COLOR);
+.header-container .social-container a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: content-box;
+  color: var(--BORDER-COLOR);
+  background-color: var(--BORDER-COLOR);
 }
 
 /* Social Buttons Image */
-header .social-container a img {
-    margin: 3px;
-    background-color: white;
+.header-container .social-container a img {
+  margin: 0px;
+  /* background-color: white; */
 }
 
 /* Social Git Button */
-header .social-container .git-button {
-    background-color: white;
+.header-container .social-container .git-button {
+  /* background-color: white; */
 }
 
 /* Social Git Button Image */
-header .social-container .git-button img{
-    margin: 0;
-    background-color: transparent;
+.header-container .social-container .git-button img{
+  margin: 0;
+  background-color: transparent;
 }
