@@ -1,0 +1,102 @@
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  border: 2px solid var(--BORDER-COLOR);
+  border-radius: 10px;
+  margin-top: 20px;
+  animation: fade-in 1s;
+  /* box-shadow: 2px 3px var(--BORDER-COLOR); */
+}
+
+/* Left Section */
+.home-container .left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;;
+  text-align: left;
+  padding-left: 20px;
+  /* background-color: red; */
+  height: 300px;
+
+}
+
+/* Title */
+.home-container .left-section .title {
+  font-size: 5em;
+  text-align: left;
+  line-height: 1em;
+  flex: 1;
+  color: var(--TEXT-COLOR);
+}
+
+/* Typing */
+.home-container .left-section .typing {
+  font-size: 5em;
+  text-align: left;
+  line-height: 1em;
+  margin-bottom: 20px;
+  flex: 1;
+  color: var(--TEXT-COLOR);
+
+  margin-left: 0px;
+  width: max-content;
+  animation: blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  border-right: 4px solid;
+}
+
+/* Subtitle */
+.home-container .left-section h2 {
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 10px;
+  flex: 1;
+  color: var(--TEXT-COLOR);
+}
+
+/* Button */
+.home-container .left-section button {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid var(--BORDER-COLOR);
+  background-color: var(--BORDER-COLOR);
+  color: white;
+  margin-top: auto;
+  flex: 1;
+  /* box-shadow: 2px 3px black; */
+  transition: 0.2s ease-in-out;  
+}
+
+/* Button Hover */
+.home-container .left-section button:hover {
+  transform: translate(2px, 3px);
+  /* box-shadow: 0px 0px var(--BORDER-COLOR); */
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Right Section */
+.home-container .right-section {
+  display: flex;
+  margin-bottom: auto;
+  justify-content: right;
+  /* background-color: orange; */
+}
+
+/* Image */
+.home-container .right-section img {
+  border-radius: 10px;
+  margin: 20px;
+  height: 300px;
+}
+
+/* Typing Animation */
+@keyframes blink {
+  50% {
+      border-color: transparent
+  }
+}

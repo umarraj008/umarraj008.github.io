@@ -1,0 +1,110 @@
+header {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--BORDER-COLOR);
+    animation: fade-in 1s;
+    /* box-shadow: 2px 3px var(--BORDER-COLOR); */
+}
+
+/* Logo Container */
+header .logo-container {
+    display: flex;
+    flex-direction: row;
+    /* margin-right: auto; */
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo Image */
+header .logo-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Logo Title */
+header .logo-container h1 {
+    word-spacing: 99999999999px;
+    line-height: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Button Container */
+header .button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex: 1;
+    /* background-color: orange; */
+}
+
+/* Button */
+header .button-container button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1em;
+    border: 2px solid var(--BORDER-COLOR);
+    /* box-shadow: 2px 3px var(--BORDER-COLOR); */
+    transition: 0.2s ease-in-out;  
+}
+
+/* Button Hover */
+header .button-container button:hover {
+    transform: translate(2px, 3px);
+    box-shadow: 0px 0px var(--BORDER-COLOR);
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Social Container */
+header .social-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    flex: 1;
+    gap: 10px;
+    justify-content: right;
+    /* background-color: lime; */
+}
+
+/* Social Buttons */
+header .social-container a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: content-box;
+    color: var(--BORDER-COLOR);
+    background-color: var(--BORDER-COLOR);
+}
+
+/* Social Buttons Image */
+header .social-container a img {
+    margin: 3px;
+    background-color: white;
+}
+
+/* Social Git Button */
+header .social-container .git-button {
+    background-color: white;
+}
+
+/* Social Git Button Image */
+header .social-container .git-button img{
+    margin: 0;
+    background-color: transparent;
+}
