@@ -1,97 +1,119 @@
-/* Home Container */
-.home-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* background-color: red; */
-  border: 2px solid var(--BORDER-COLOR);
-  border-radius: 10px;
-  margin-top: 20px;
-  animation: fade-in 1s;
-  /* box-shadow: 2px 3px var(--BORDER-COLOR); */
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+  
 }
 
-/* Left Section */
-.home-container .left-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;;
-  text-align: left;
-  padding-left: 20px;
-  /* background-color: red; */
-  height: 300px;
-
+/* Tablet styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
 }
 
-/* Title */
-.home-container .left-section .title {
-  font-size: 5em;
-  text-align: left;
-  line-height: 1em;
-  flex: 1;
-  color: var(--TEXT-COLOR);
+/* Laptop styles (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+ 
 }
 
-/* Typing */
-.home-container .left-section .typing {
-  font-size: 5em;
-  text-align: left;
-  line-height: 1em;
-  margin-bottom: 20px;
-  flex: 1;
-  color: var(--TEXT-COLOR);
+/* Desktop styles (1440px and up) */
+@media (min-width: 1440px) {
+  /* Home Section */
+  #home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 600px;
+    /* background-color: red; */
+  }
 
-  margin-left: 0px;
-  width: max-content;
-  animation: blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  border-right: 4px solid;
-}
+  /* Left Section */
+  #home .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;;
+    text-align: left;
+    padding-left: 20px;
+    /* background-color: red; */
+    /* height: 300px; */
 
-/* Subtitle */
-.home-container .left-section h2 {
-  font-size: 1em;
-  text-align: left;
-  margin-bottom: 10px;
-  flex: 1;
-  color: var(--TEXT-COLOR);
-}
+  }
 
-/* Button */
-.home-container .left-section button {
-  width: 150px;
-  height: 50px;
-  border-radius: 10px;
-  border: 2px solid var(--BORDER-COLOR);
-  background-color: var(--BORDER-COLOR);
-  color: white;
-  margin-top: auto;
-  flex: 1;
-  /* box-shadow: 2px 3px black; */
-  transition: 0.2s ease-in-out;  
-}
+  /* Title */
+  #home .left-section .title {
+    font-size: 4em;
+    text-align: left;
+    line-height: 1em;
+    flex: 1;
+    color: var(--TEXT-COLOR);
+  }
 
-/* Button Hover */
-.home-container .left-section button:hover {
-  transform: translate(2px, 3px);
-  /* box-shadow: 0px 0px var(--BORDER-COLOR); */
-  background-color: rgba(0,0,0,0.1);
-}
+  /* Typing */
+  #home .left-section .typing {
+    font-size: 4em;
+    text-align: left;
+    line-height: 1em;
+    margin-bottom: 20px;
+    flex: 1;
+    color: var(--TEXT-COLOR);
+    
+    /* cursor */
+    margin-left: 0px;
+    width: max-content;
+    animation: blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 4px solid;
+  }
 
-/* Right Section */
-.home-container .right-section {
-  display: flex;
-  margin-bottom: auto;
-  justify-content: right;
-  /* background-color: orange; */
-}
+  /* Subtitle */
+  #home .left-section h2 {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 10px;
+    flex: 1;
+    color: var(--TEXT-COLOR);
+  }
 
-/* Image */
-.home-container .right-section img {
-  border-radius: 10px;
-  margin: 20px;
-  height: 300px;
+  /* Button */
+  #home .left-section a {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--BORDER-COLOR);
+    background-color: var(--BORDER-COLOR);
+    color: white;
+    margin-top: auto;
+    flex: 1;
+    /* box-shadow: 2px 3px black; */
+    transition: 0.2s ease-in-out;  
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Button Hover */
+  #home .left-section a:hover {
+    transform: translate(2px, 3px);
+    /* box-shadow: 0px 0px var(--BORDER-COLOR); */
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  /* Right Section */
+  #home .right-section {
+    display: flex;
+    /* margin-bottom: auto; */
+    justify-content: right;
+    /* background-color: orange; */
+  }
+
+  /* Image */
+  #home .right-section img {
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
 }
 
 /* Typing Animation */

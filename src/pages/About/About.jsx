@@ -1,16 +1,11 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import "./About.css";
 
 function About() {
   return (
-    <>
-      <Helmet>
-        <link rel="canonical" href="https://umarrajput.co.uk/about" />
-        <title>About Me | Umar Rajput</title>
-        <meta name="description" content="" />
-      </Helmet>
-      <div>About</div>
-    </>
+    <section id="about" className='about-container'>
+      <h1>About Me</h1>
+    </section>
   )
 }
 

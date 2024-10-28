@@ -16,13 +16,24 @@
   color: var(--TEXT-COLOR);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
+  user-select: none;
 }
 
 /* Light Theme */
 :root[data-theme="light"] {
-  --MAIN-BG: #ECDFCC;
+  --c1: #B6C7AA;
+  --c2: #F6E6CB;
+  --c3: #E7D4B5;
+  --c4: #A0937D;
+
+  --MAIN-BG: var(--c2);
+  --HEADER-BG: var(--c1);
   --BORDER-COLOR: #3C3D37;
   --TEXT-COLOR: #3C3D37;
   
@@ -33,6 +44,7 @@ button {
   --MAIN-BG: #383723;
 }
 
+/* Fade In Animation */
 @keyframes fade-in {
   from {
     opacity: 0;

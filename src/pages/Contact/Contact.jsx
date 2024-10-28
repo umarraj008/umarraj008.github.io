@@ -1,16 +1,13 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import "./Contact.css";
 
 function Contact() {
   return (
-    <>
-      <Helmet>
-        <link rel="canonical" href="https://umarrajput.co.uk/contact" />
-        <title>Contact | Umar Rajput</title>
-        <meta name="description" content="" />
-      </Helmet>      
-      <div>Contact</div>
-    </>
+    <section id="contact">
+      <div className='contact-container'>
+        <h1>Contact</h1>
+      </div>
+    </section>
   )
 }
 
