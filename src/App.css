@@ -95,7 +95,7 @@
   }
   
   section {
-    border: 2px solid var(--BORDER-COLOR);
+    /* border: 2px solid var(--BORDER-COLOR); */
     border-radius: 10px;
     animation: fade-in 1s;
     min-height: 10vh;

@@ -15,5 +15,16 @@
 
 /* Desktop styles (1440px and up) */
 @media (min-width: 1440px) {
+  /* Skills Section */
+  #skills {
+    border: 2px solid var(--BORDER-COLOR);
+    padding: 20px;
+  }
+
+  /* Skills Title */
+  #skills h1 {
+    font-size: 2em;
+    text-align: center;
+  }
   
 }
