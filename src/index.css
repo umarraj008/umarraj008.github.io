@@ -14,6 +14,7 @@
   line-height: 1em;
   font-family: "Roboto", sans-serif;
   color: var(--TEXT-COLOR);
+  transition: 0.2s ease-in-out;  
 }
 
 html {
@@ -36,12 +37,30 @@ button {
   --HEADER-BG: var(--c1);
   --BORDER-COLOR: #3C3D37;
   --TEXT-COLOR: #3C3D37;
+
+  --ABOUT-BG-IMG: url("/flatBackgroundLight.svg");
   
+  --fb1: #F4F6DA;
+  --fb2: #E38821;
+  --fb3: #203827;
+  --fb4: #D9DF40;
+  --fb5: #60A84C;
 }
 
 /* Dark Theme */
 :root[data-theme="dark"] {
-  --MAIN-BG: #383723;
+  --MAIN-BG: #252523;
+  --HEADER-BG: #445e42;
+  --BORDER-COLOR: #3C3D37;
+  --TEXT-COLOR: white;
+
+  --ABOUT-BG-IMG: url("/flatBackgroundDark.svg");
+  
+  --fb1: #0b0925;
+  --fb2: #E38821;
+  --fb3: #203827;
+  --fb4: #D9DF40;
+  --fb5: #60A84C;
 }
 
 /* Fade In Animation */

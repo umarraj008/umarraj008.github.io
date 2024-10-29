@@ -17,14 +17,65 @@
 @media (min-width: 1440px) {
   /* Skills Section */
   #skills {
-    border: 2px solid var(--BORDER-COLOR);
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   /* Skills Title */
   #skills h1 {
-    font-size: 2em;
+    font-size: 4em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+    /* background-color: var(--HEADER-BG); */
+  }
+
+  /* Skills Container */
+  #skills .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     text-align: center;
+    /* background-color: grey; */
   }
   
+  /* Skills Items Container */
+  #skills .skills-container .skills-items-container {
+    display: flex;
+    /* background-color: lightblue; */
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* border-bottom: 2px solid var(--BORDER-COLOR); */
+    box-sizing: border-box;
+  }
+
+  /* Skills Items Container Last */
+  #skills .skills-container .skills-items-container:last-child {
+    border: none;
+  }
+
+  /* Skills Item */
+  #skills .skills-container .skills-items-container .skills-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: white; */
+    align-items: center;
+  }
+  
+  /* Skills Item Text */
+  #skills .skills-container .skills-items-container .skills-item p {
+    text-align: center;
+  }
+
+  /* Skills Item Image */
+  #skills .skills-container .skills-items-container .skills-item img {
+    width: 50px;
+    border-radius: 15px;
+    padding: 10px;
+  }
 }

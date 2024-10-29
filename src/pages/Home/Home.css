@@ -21,10 +21,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: none;
     height: 600px;
-    margin-bottom: calc(100vh - 600px);
+    /* margin-bottom: calc(100vh - 600px); */
     /* background-color: lime; */
+    border-radius: 0;
+    border-bottom: 2px solid var(--BORDER-COLOR);
   }
 
   /* Left Section */
@@ -79,7 +80,7 @@
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    border: 2px solid var(--BORDER-COLOR);
+    /* border: 2px solid var(--BORDER-COLOR); */
     background-color: var(--BORDER-COLOR);
     color: white;
     /* margin-top: auto; */
@@ -117,7 +118,8 @@
   #home .right-section img {
     border-radius: 10px;
     margin: 20px;
-    width: 100%;
+    width: 450px;
+    background-color: red;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }

@@ -15,5 +15,22 @@
 
 /* Desktop styles (1440px and up) */
 @media (min-width: 1440px) {
-  
+  /* Contact Section */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    gap: 20px;
+    margin-bottom: 100px;
+
+  }
+
+  /* Contact Title */
+  #contact h1 {
+    font-size: 4em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+    /* background-color: var(--HEADER-BG); */
+  }  
 }

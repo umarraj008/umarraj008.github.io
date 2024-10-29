@@ -9,12 +9,10 @@ function Projects() {
       - Links: Include a link to the live project and/or GitHub repository.
       - Images/Screenshots: Visuals to make the projects stand out.
    */
-  
+
   return (
     <section id="projects">
-      <div className='projects-container'>
-        <h1>Projects</h1>
-      </div>
+      <h1>Projects</h1>
     </section>
   )
 }

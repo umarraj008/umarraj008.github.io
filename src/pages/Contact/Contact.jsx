@@ -7,12 +7,10 @@ function Contact() {
    * Email Address: Provide your email for direct contact.
    * Social Links: Links to your LinkedIn, GitHub, Twitter, or any other relevant profiles.
    */
-  
+
   return (
     <section id="contact">
-      <div className='contact-container'>
-        <h1>Contact</h1>
-      </div>
+      <h1>Contact</h1>
     </section>
   )
 }

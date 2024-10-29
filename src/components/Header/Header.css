@@ -95,11 +95,17 @@ header .header-container {
   border-radius: 10px;
   text-decoration: none;
   color: white;
-  background-color: #25231a;
   font-size: 1em;
+  border: none;
   /* border: 2px solid var(--BORDER-COLOR); */
   /* box-shadow: 2px 3px var(--BORDER-COLOR); */
   transition: 0.2s ease-in-out;  
+  background-color: #25231a;
+}
+
+/* Button Highlight */
+.header-container .button-container a.highlight {
+  background-color: rgb(92, 124, 95);
 }
 
 /* Button Icon */
@@ -127,31 +133,17 @@ header .header-container {
 
 /* Social Buttons */
 .header-container .social-container a {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-content: center;
   justify-content: center;
   overflow: hidden;
   box-sizing: content-box;
-  color: var(--BORDER-COLOR);
-  background-color: var(--BORDER-COLOR);
+  background-color: transparent;
 }
 
 /* Social Buttons Image */
 .header-container .social-container a img {
   margin: 0px;
-  /* background-color: white; */
-}
-
-/* Social Git Button */
-.header-container .social-container .git-button {
-  /* background-color: white; */
-}
-
-/* Social Git Button Image */
-.header-container .social-container .git-button img{
-  margin: 0;
-  background-color: transparent;
 }

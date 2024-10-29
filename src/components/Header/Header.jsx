@@ -21,7 +21,7 @@ function Header(props) {
       });
     }
   };
-
+  
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
@@ -47,17 +47,17 @@ function Header(props) {
           <h1>Umar Rajput</h1>
         </div>
         <nav className='button-container'>
-            <a href="#home" onClick={(e) => scrollToSection(e,'home')}>Home</a>
-            <a href="#about" onClick={(e) => scrollToSection(e,'about')}>About</a>
-            <a href="#skills" onClick={(e) => scrollToSection(e,'skills')}>Skills</a>
-            <a href="#projects" onClick={(e) => scrollToSection(e,'projects')}>Projects</a>
-            <a href="#cv" onClick={(e) => scrollToSection(e,'cv')}>CV</a>
-            <a href="#contact" onClick={(e) => scrollToSection(e,'contact')}>Contact</a>
-            <a href="#games" onClick={(e) => scrollToSection(e,'games')}>Games&nbsp;<span class="material-symbols-outlined">open_in_new</span></a>
+            <a className={(props.currentSection == "home") ? "highlight" : ""} href="#home" onClick={(e) => scrollToSection(e,'home')}>Home</a>
+            <a className={(props.currentSection == "about") ? "highlight" : ""} href="#about" onClick={(e) => scrollToSection(e,'about')}>About</a>
+            <a className={(props.currentSection == "skills") ? "highlight" : ""} href="#skills" onClick={(e) => scrollToSection(e,'skills')}>Skills</a>
+            <a className={(props.currentSection == "projects") ? "highlight" : ""} href="#projects" onClick={(e) => scrollToSection(e,'projects')}>Projects</a>
+            <a className={(props.currentSection == "cv") ? "highlight" : ""} href="#cv" onClick={(e) => scrollToSection(e,'cv')}>CV</a>
+            <a className={(props.currentSection == "contact") ? "highlight" : ""} href="#contact" onClick={(e) => scrollToSection(e,'contact')}>Contact</a>
+            <a href="https://umarrajput.co.uk/Old-Website" target='_blank' rel="noopener noreferrer">Games&nbsp;<span class="material-symbols-outlined">open_in_new</span></a>
         </nav>
         <div className="social-container">
-          <a alt="GitHub Link" href="https://github.com/umarraj008/" target='_blank' rel="noopener noreferrer" className='git-button'><img src='/github.svg' /></a>
-          <a alt="LinkedIn Link" href="https://www.linkedin.com/in/umar-rajput/" target='_blank' rel="noopener noreferrer"><img src='/linkedin.svg' /></a>
+          <a alt="GitHub Link" href="https://github.com/umarraj008/" target='_blank' rel="noopener noreferrer" className='git-button'><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
+          <a alt="LinkedIn Link" href="https://www.linkedin.com/in/umar-rajput/" target='_blank' rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" /></a>
         </div>
       </div>
     </header>

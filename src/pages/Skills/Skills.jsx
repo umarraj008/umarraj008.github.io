@@ -6,12 +6,221 @@ function Skills() {
    * Technical Skills: List programming languages, frameworks, tools, and technologies you’re proficient in. Consider using a visually appealing format, like bars or graphs to represent your proficiency level.
    * Soft Skills: Mention skills like teamwork, communication, problem-solving, etc.
    * Certifications: Include any relevant certifications or courses completed.
+   * 
+   * top 5 languages
+   * favourite ide
    */
-  
+
   return (
     <section id="skills">
+      <h1>Skills</h1>
+
       <div className='skills-container'>
-        <h1>Skills</h1>
+        <div className="skills-items-container">
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" /> 
+            <p>Java</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /> 
+            <p>React</p>
+          </div>
+  
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> 
+            <p>JavaScript</p>
+          </div>
+  
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" /> 
+            <p>TypeScript</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /> 
+            <p>Php</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" /> 
+            <p>C#</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" /> 
+            <p>MySQL</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /> 
+            <p>HTML</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /> 
+            <p>CSS</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /> 
+            <p>Python</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/haskell/haskell-original.svg" /> 
+            <p>Haskell</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" /> 
+            <p>Visual Basic</p>
+          </div>
+        </div>
+
+        <div className="skills-items-container">
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" /> 
+            <p>Node.js</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" /> 
+            <p>Express</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" /> 
+            <p>Socket.io</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" /> 
+            <p>Firebase</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" /> 
+            <p>Vite</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" /> 
+            <p>.Net Core</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" /> 
+            <p>NPM</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" /> 
+            <p>Maven</p>
+          </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg" /> 
+            <p>Gradle</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" /> 
+            <p>Docker</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" /> 
+            <p>JUnit</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" /> 
+            <p>Windows</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" /> 
+            <p>MacOS</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" /> 
+            <p>Linux</p>
+          </div>
+        </div>
+
+        <div className="skills-items-container">
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /> 
+            <p>VS Code</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" /> 
+            <p>Visual Studio</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" /> 
+            <p>IntelliJ IDEA</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /> 
+            <p>Eclipse</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" /> 
+            <p>Android Studio</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xcode/xcode-original.svg" /> 
+            <p>Xcode</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /> 
+            <p>GitHub</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" /> 
+            <p>GitLab</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" /> 
+            <p>Figma</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" /> 
+            <p>Trello</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" /> 
+            <p>Jira</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" /> 
+            <p>Blender</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" /> 
+            <p>Photoshop</p>
+          </div>
+
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg" /> 
+            <p>Gimp</p>
+          </div>
+        </div>
       </div>
     </section>
   )
