@@ -28,17 +28,29 @@ button {
 
 /* Light Theme */
 :root[data-theme="light"] {
+
+  --background-color: #fff;
+  --accent1: #fff;
+  --accent1-darker: #fff;
+  --line-color: #fff;
+  --text-color: #fff;
+  --button-color: #fff;
+  --button-text-color: #fff;
+  --button-hover: #fff;
+  --button-highlight: #fff; 
+
+  --ABOUT-BG-IMG: url("/flatBackgroundLight.svg");
+  
+  
   --c1: #B6C7AA;
   --c2: #F6E6CB;
   --c3: #E7D4B5;
   --c4: #A0937D;
-
+  
   --MAIN-BG: var(--c2);
   --HEADER-BG: var(--c1);
   --BORDER-COLOR: #3C3D37;
   --TEXT-COLOR: #3C3D37;
-
-  --ABOUT-BG-IMG: url("/flatBackgroundLight.svg");
   
   --fb1: #F4F6DA;
   --fb2: #E38821;
@@ -51,10 +63,11 @@ button {
 :root[data-theme="dark"] {
   --MAIN-BG: #252523;
   --HEADER-BG: #445e42;
+  --HEADER-D-BG: #212e21;
   --BORDER-COLOR: #3C3D37;
   --TEXT-COLOR: white;
 
-  --ABOUT-BG-IMG: url("/flatBackgroundDark.svg");
+  /* --ABOUT-BG-IMG: url("/flatBackgroundDark.svg"); */
   
   --fb1: #0b0925;
   --fb2: #E38821;

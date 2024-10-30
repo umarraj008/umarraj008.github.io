@@ -16,6 +16,7 @@ function Skills() {
       <h1>Skills</h1>
 
       <div className='skills-container'>
+        <h2><span className="material-symbols-outlined">code</span>&nbsp;Programming Languages</h2>
         <div className="skills-items-container">
           <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" /> 
@@ -78,6 +79,7 @@ function Skills() {
           </div>
         </div>
 
+        <h2><span className="material-symbols-outlined">data_object</span>&nbsp;Frameworks and Technologies</h2>
         <div className="skills-items-container">
           <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" /> 
@@ -150,6 +152,7 @@ function Skills() {
           </div>
         </div>
 
+        <h2><span className="material-symbols-outlined">home_repair_service</span>&nbsp;Development Tools</h2>
         <div className="skills-items-container">
           <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /> 
@@ -220,6 +223,29 @@ function Skills() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg" /> 
             <p>Gimp</p>
           </div>
+        </div>
+      </div>
+
+      <div className="favourite-container">
+        <div className="favourite-section">
+          <h2>Best Front-End Language</h2>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /> 
+          <h3>React</h3>
+        </div>
+        <div className="favourite-section">
+          <h2>Best Back-End Language</h2>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" /> 
+          <h3>Java</h3>
+        </div>
+        <div className="favourite-section">
+          <h2>Favourite IDE</h2>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" /> 
+          <h3>VS Code</h3>
+        </div>
+        <div className="favourite-section">
+          <h2>Favourite OS</h2>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" /> 
+          <h3>Windows 10</h3>
         </div>
       </div>
     </section>

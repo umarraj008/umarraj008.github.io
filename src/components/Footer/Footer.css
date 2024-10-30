@@ -20,39 +20,9 @@
     /* border: 2px solid var(--BORDER-COLOR); */
     background-color: var(--HEADER-BG);
     border-radius: 10px;
-    margin-top: 20px;
     animation: fade-in 1s;
     padding: 20px;
+    height: 300px;
     text-align: center;
-  }
-
-  /* Top Container */
-  footer .top-container {
-    margin-bottom: 50px;
-  }
-
-  /* Top Container Title */
-  footer .top-container h4 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-
-  /* Top Container Email */
-  footer .top-container p {
-    font-size: 1em;
-  }
-
-  /* Socials Container */
-  footer .top-container .socials-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  /* Bottom Container */
-  footer .bottom-container {
-    padding-bottom: 20px;
   }
 }

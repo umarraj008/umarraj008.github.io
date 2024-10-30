@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* background-color: red; */
   }
 
   /* Skills Title */
@@ -35,8 +36,7 @@
   #skills .skills-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    text-align: center;
+    text-align: left;
     /* background-color: grey; */
   }
   
@@ -47,15 +47,27 @@
     flex-direction: row;
     gap: 20px;
     justify-content: space-between;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px;
+    border-radius: 0 0px 15px 15px;
+    background-color: var(--HEADER-BG);
+    /* padding-top: 20px; */
     /* border-bottom: 2px solid var(--BORDER-COLOR); */
     box-sizing: border-box;
+    margin-bottom: 20px;
   }
-
+  
   /* Skills Items Container Last */
   #skills .skills-container .skills-items-container:last-child {
-    border: none;
+    margin-bottom: 0px;
+  }
+  
+  /* Skills Items Container Title */
+  #skills .skills-container h2 {
+    background-color: var(--HEADER-D-BG);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
   }
 
   /* Skills Item */
@@ -77,5 +89,54 @@
     width: 50px;
     border-radius: 15px;
     padding: 10px;
+  }
+
+  /* Favourite Container */
+  #skills .favourite-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* justify-content: space-between; */
+    /* background-color: red; */
+    gap: 20px;
+  }
+  
+  /* Favourite Section Container */
+  #skills .favourite-container .favourite-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 15px;
+    /* border: 4px solid var(--TEXT-COLOR); */
+  }
+  
+  /* Favourite Section Title */
+  #skills .favourite-container .favourite-section h2 {
+    font-size: 1.5em;
+    background-color: var(--HEADER-D-BG);
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Favourite Section Image */
+  #skills .favourite-container .favourite-section img {
+    height: 200px;
+    padding: 20px;
+    background-color: var(--HEADER-BG);
+  }
+  
+  /* Favourite Section Label */
+  #skills .favourite-container .favourite-section h3 {
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border-radius: 0 0 15px 15px;
+    background-color: var(--HEADER-BG);
   }
 }

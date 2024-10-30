@@ -140,7 +140,8 @@ header .header-container {
   justify-content: center;
   overflow: hidden;
   box-sizing: content-box;
-  background-color: transparent;
+  /* background-color: transparent; */
+  color: #25231a;
 }
 
 /* Social Buttons Image */

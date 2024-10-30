@@ -9,7 +9,7 @@ function Home() {
         <h1 className='title'>Hello, I'm Umar Rajput,</h1>
         <TypingAnimation />
         <h2>Focusing on full-stack development and data-driven solutions</h2>
-        <a href="#about"><span class="material-symbols-outlined">arrow_downward</span>&nbsp;Learn More</a>
+        <a href="#about"><span className="material-symbols-outlined">arrow_downward</span>&nbsp;Learn More</a>
       </div>
       <div className="right-section">
         <img src="/umarLogoV3.png"/>

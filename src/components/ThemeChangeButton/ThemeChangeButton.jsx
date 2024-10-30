@@ -32,7 +32,7 @@ function ThemeChangeButton() {
   };
 
   return (
-    <button className={theme + " theme-change-button"} onClick={changeTheme}><span class="material-symbols-outlined">{theme == "light" ? "dark_mode" : "light_mode"}</span></button>
+    <button className={"theme-change-button " + theme} onClick={changeTheme}><span className="material-symbols-outlined">{theme == "light" ? "light_mode" : "dark_mode"}</span></button>
   )
 }
 
