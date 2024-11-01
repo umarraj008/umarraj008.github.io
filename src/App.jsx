@@ -24,7 +24,7 @@ function App() {
           setCurrentSection(id);
         }
       });
-    }, { threshold: 0.9 });
+    }, { threshold: 0.6 });
 
     sections.forEach(section => {
       observer.observe(section);

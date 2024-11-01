@@ -10,6 +10,9 @@ function CV() {
   return (
     <section id="cv">
       <h1>CV</h1>
+      <div className="cv-container">
+        <h2><a href="">Download my CV</a></h2>
+      </div>
     </section>
   )
 }

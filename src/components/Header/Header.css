@@ -116,7 +116,6 @@ header .header-container {
 /* Button Hover */
 .header-container .button-container a:hover {
   transform: translate(2px, 3px);
-  box-shadow: 0px 0px var(--BORDER-COLOR);
   background-color: rgba(0,0,0,0.1);
 }
 

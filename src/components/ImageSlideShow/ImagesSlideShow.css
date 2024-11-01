@@ -1,0 +1,76 @@
+/* Slideshow Container */
+.slideshow-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  border: 3px solid red;
+  align-items: center;
+}
+
+/* Slideshow Image */
+.slideshow-container img {
+  width: 100%;
+  height: 0;
+  flex: 1;
+  object-fit: cover;
+  transition: 0.2s ease-in-out;
+}
+
+/* Slideshow Button Container */
+.slideshow-container .button-container {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+
+/* Slideshow Buttons */
+.slideshow-container .button-container button {
+  background-color: var(--BORDER-COLOR);
+  border-radius: 50%;
+  /* width: 30px; */
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--TEXT-COLOR);
+  font-size: 2em;
+  border: none;
+  outline: none;
+  margin: 10px
+}
+
+/* Slideshow Images Selector Container */
+.slideshow-container .button-container .images-selector-container {
+  display: flex;
+  /* width: 100%; */
+  /* justify-content: center;  */
+  gap: 2px;
+  transition: 0.2s ease-in-out;
+  background-color: red;
+  overflow-x: scroll;
+}
+
+/* Slideshow Images Selector Images */
+.slideshow-container .button-container .images-selector-container img {
+  border: 1px solid black;
+  max-width: 60px;
+  height: 40px;
+  object-fit: cover;
+  filter: saturate(0) opacity(0.5);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+}
+
+/* Slideshow Images Selector Images Highlight */
+.slideshow-container .button-container .images-selector-container .highlight {
+  filter: opacity(1) saturate(1);
+  border: 1px solid rgb(71, 71, 173);
+  transition: 0.2s ease-in-out;
+}

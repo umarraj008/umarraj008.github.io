@@ -1,0 +1,71 @@
+  /* Project Item */
+  #projects .projects-container .projects-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--HEADER-BG);
+    border-radius: 15px;
+    gap: 10px;
+  }
+  
+  /* Project Item Image */
+  /* #projects .projects-container .projects-item img {
+    height: 300px;
+    object-fit: cover;
+  } */
+  
+  /* Project Item Title */
+  #projects .projects-container .projects-item h2 {
+    font-size: 2em;
+  }
+  
+  /* Project Item Chip Container */
+  #projects .projects-container .projects-item ul {
+    display: block;
+  }
+
+  /* Project Item Chip */
+  #projects .projects-container .projects-item ul li {
+    padding: 5px 10px 5px 10px;
+    list-style: none;
+    border-radius: 15px;
+    background-color: grey;
+    width: max-content;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  /* Project Item Description */
+  #projects .projects-container .projects-item p {
+    margin-top: 5px;
+    /* height: 150px; */
+    font-size: 1em;
+  }
+
+  /* Project Item Button Container */
+  #projects .projects-container .projects-item .button-container {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+  }
+
+  /* Project Item Button */
+  #projects .projects-container .projects-item .button-container a {
+    padding: 20px;
+    background-color: var(--BORDER-COLOR);
+    border-radius: 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  /* Project Item Button Hover */
+  #projects .projects-container .projects-item .button-container a:hover {
+    transform: translate(2px, 3px);
+    background-color: rgba(0,0,0,0.2);
+  }
