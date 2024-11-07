@@ -18,7 +18,7 @@
   /* Footer Container */
   footer {
     /* border: 2px solid var(--BORDER-COLOR); */
-    background-color: var(--HEADER-BG);
+    background-color: var(--color2);
     border-radius: 10px;
     animation: fade-in 1s;
     padding: 20px;

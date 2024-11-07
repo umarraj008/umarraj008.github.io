@@ -10,6 +10,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ThemeChangeButton from './components/ThemeChangeButton/ThemeChangeButton';
 
+const threshold = 0.3;
+
 function App() {
   const [currentSection, setCurrentSection] = useState("");
 
@@ -24,7 +26,7 @@ function App() {
           setCurrentSection(id);
         }
       });
-    }, { threshold: 0.6 });
+    }, { threshold: threshold });
 
     sections.forEach(section => {
       observer.observe(section);

@@ -28,52 +28,32 @@ button {
 
 /* Light Theme */
 :root[data-theme="light"] {
-
-  --background-color: #fff;
-  --accent1: #fff;
-  --accent1-darker: #fff;
-  --line-color: #fff;
-  --text-color: #fff;
-  --button-color: #fff;
-  --button-text-color: #fff;
-  --button-hover: #fff;
-  --button-highlight: #fff; 
-
-  --ABOUT-BG-IMG: url("/flatBackgroundLight.svg");
-  
-  
-  --c1: #B6C7AA;
-  --c2: #F6E6CB;
-  --c3: #E7D4B5;
-  --c4: #A0937D;
-  
-  --MAIN-BG: var(--c2);
-  --HEADER-BG: var(--c1);
-  --BORDER-COLOR: #3C3D37;
-  --TEXT-COLOR: #3C3D37;
-  
-  --fb1: #F4F6DA;
-  --fb2: #E38821;
-  --fb3: #203827;
-  --fb4: #D9DF40;
-  --fb5: #60A84C;
+  --color1: #dbdbdb;
+  --color2: #ffffff;
+  --color3: #92c3d8;
+  --color4: #111111;
+  --line-color: black;
+  --text-color: black;
+  --button-color: rgba(0,0,0,0.2);
+  --button-text-color: black;
+  --button-hover: rgba(0,0,0,0.4);
+  --button-highlight: var(--color3); 
+  --logo-color: black;
 }
 
 /* Dark Theme */
 :root[data-theme="dark"] {
-  --MAIN-BG: #252523;
-  --HEADER-BG: #445e42;
-  --HEADER-D-BG: #212e21;
-  --BORDER-COLOR: #3C3D37;
-  --TEXT-COLOR: white;
-
-  /* --ABOUT-BG-IMG: url("/flatBackgroundDark.svg"); */
-  
-  --fb1: #0b0925;
-  --fb2: #E38821;
-  --fb3: #203827;
-  --fb4: #D9DF40;
-  --fb5: #60A84C;
+  --color1: #222831;
+  --color2: #31363F;
+  --color3: #7693ae;
+  --color4: #EEEEEE;
+  --line-color: #fff;
+  --text-color: #fff;
+  --button-color: rgba(255,255,255,0.2);
+  --button-text-color: white;
+  --button-hover: rgba(0,0,0,0.2);
+  --button-highlight: var(--color3); 
+  --logo-color: white;
 }
 
 /* Fade In Animation */
@@ -84,4 +64,18 @@ button {
   to {
     opacity: 100;
   } 
+}
+
+/* 2k display */
+@media only screen and (min-width: 2560px) and (max-width: 3839px) {
+  body {
+    zoom: 1.25;
+  };
+}
+
+/* 4k display */
+@media only screen and (min-width: 3840px) {
+  body {
+    zoom: 2;
+  };
 }

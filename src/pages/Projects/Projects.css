@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 100px;
-
+    color: var(--text-color);
   }
 
   /* Projects Title */
@@ -35,7 +35,8 @@
 
   /* Projects Container */
   #projects .projects-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
   }

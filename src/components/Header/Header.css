@@ -27,10 +27,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--MAIN-BG);
   padding-top: 20px;
   padding-bottom: 20px;
   user-select: none;
+  color: var(--text-color);
+  background-color: var(--color1);
   /* height: 80px; */
   /* background: linear-gradient(180deg, var(--MAIN-BG) 90%, rgba(0,0,0,0) 100%); */
 }
@@ -40,7 +41,7 @@ header .header-container {
   height: 80px;
   display: flex;
   flex-direction: row;
-  background-color: var(--HEADER-BG);
+  background-color: var(--color2);
   /* background-color: red; */
   justify-content: center;
   align-items: center;
@@ -73,7 +74,7 @@ header .header-container {
   line-height: 1em;
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
+  color: var(--logo-color);
 }
 
 /* Button Container */
@@ -94,29 +95,30 @@ header .header-container {
   justify-content: center;
   border-radius: 10px;
   text-decoration: none;
-  color: white;
+  color: var(--button-text-color);
   font-size: 1em;
   border: none;
   /* border: 2px solid var(--BORDER-COLOR); */
   /* box-shadow: 2px 3px var(--BORDER-COLOR); */
   transition: 0.2s ease-in-out;  
-  background-color: #25231a;
+  background-color: var(--button-color);
 }
 
 /* Button Highlight */
 .header-container .button-container a.highlight {
-  background-color: rgb(92, 124, 95);
+  /* background-color: rgb(92, 124, 95); */
+  background-color: var(--button-highlight);
 }
 
 /* Button Icon */
 .header-container .button-container a span {
-  color: white;
+  color: var(--text-color);
 }
 
 /* Button Hover */
 .header-container .button-container a:hover {
   transform: translate(2px, 3px);
-  background-color: rgba(0,0,0,0.1);
+  background-color: var(--button-hover);
 }
 
 /* Social Container */
@@ -140,7 +142,7 @@ header .header-container {
   overflow: hidden;
   box-sizing: content-box;
   /* background-color: transparent; */
-  color: #25231a;
+  color: var(--text-color);
 }
 
 /* Social Buttons Image */

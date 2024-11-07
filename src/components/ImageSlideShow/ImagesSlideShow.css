@@ -1,29 +1,32 @@
 /* Slideshow Container */
 .slideshow-container {
-  width: 100%;
-  height: 300px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   transition: 0.2s ease-in-out;
-  border: 3px solid red;
   align-items: center;
+  gap: 10px;
 }
 
 /* Slideshow Image */
-.slideshow-container img {
+.slideshow-container #slideshow-image {
   width: 100%;
+  aspect-ratio: 16/9;
   height: 0;
   flex: 1;
-  object-fit: cover;
+  border-radius: 15px;
+  object-fit: contain;
+  background-color: white;
   transition: 0.2s ease-in-out;
+  border: 1px solid rgba(0,0,0,0.2);
 }
 
 /* Slideshow Button Container */
 .slideshow-container .button-container {
   height: 70px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 300px;
   align-items: center;
   background-color: rgba(0,0,0,0.2);
   border-radius: 15px;
@@ -31,10 +34,9 @@
 
 /* Slideshow Buttons */
 .slideshow-container .button-container button {
-  background-color: var(--BORDER-COLOR);
-  border-radius: 50%;
-  /* width: 30px; */
-  height: 30px;
+  background-color: transparent;
+  width: 30px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,26 +44,25 @@
   font-size: 2em;
   border: none;
   outline: none;
-  margin: 10px
+  margin: 5px;
 }
 
 /* Slideshow Images Selector Container */
 .slideshow-container .button-container .images-selector-container {
   display: flex;
-  /* width: 100%; */
-  /* justify-content: center;  */
   gap: 2px;
+  flex: 1;
   transition: 0.2s ease-in-out;
-  background-color: red;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 /* Slideshow Images Selector Images */
 .slideshow-container .button-container .images-selector-container img {
   border: 1px solid black;
-  max-width: 60px;
+  width: 60px;
+  background-color: white;
   height: 40px;
-  object-fit: cover;
+  object-fit: contain;
   filter: saturate(0) opacity(0.5);
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -71,6 +72,30 @@
 /* Slideshow Images Selector Images Highlight */
 .slideshow-container .button-container .images-selector-container .highlight {
   filter: opacity(1) saturate(1);
-  border: 1px solid rgb(71, 71, 173);
+  border: 2px solid blue;
+  box-sizing: border-box;
   transition: 0.2s ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
