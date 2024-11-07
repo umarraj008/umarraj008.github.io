@@ -106,7 +106,7 @@ function Projects() {
       description: "During college I created a games website that hosts multiple web games. These games were made using the HTML Canvas and javascript. They were simple games but were fun and easy to play. One of my best games was Tetris, where it featured a leaderboard that records players high scores. This made the game more competative and overall made more people play this game. My website was popular during college and had many active players daily playing the games.",
       github: "https://github.com/umarraj008/Old-Website",
       demo: true,
-      demoLink: "https://umarrajput.co.uk/Old-Website",
+      demoLink: "https://umarrajput.co.uk/Umar-Rajput-Games",
       tech: ["HTML", "CSS", "JavaScript", "Firebase", "GitHub Pages"],
       images: [
         "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/logo/favicon.png",
