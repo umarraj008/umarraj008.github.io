@@ -10,7 +10,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import ThemeChangeButton from './components/ThemeChangeButton/ThemeChangeButton';
 
-const threshold = 0.3;
+const threshold = 0.5;
 
 function App() {
   const [currentSection, setCurrentSection] = useState("");
