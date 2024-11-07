@@ -10,7 +10,7 @@ function Projects() {
       date: "Oct 2024",
       description: "A React Web App that allows you to save and view your events.",
       github: "https://github.com/umarraj008/Calendar-App",
-      demo: false,
+      demo: true,
       demoLink: "https://umarrajput.co.uk/Calendar-App",
       tech: ["React", "JavaScript", "CSS"],
       images: [
@@ -30,7 +30,7 @@ function Projects() {
       date: "Aug 2024",
       description: "This is a simple React app that allows users to track their Todo's. They can add new Todo's, edit, and remove them.",
       github: "https://github.com/umarraj008/Todo-List-App",
-      demo: false,
+      demo: true,
       demoLink: "https://umarrajput.co.uk/Todo-List-App",
       tech: ["React", "JavaScript", "CSS"],
       images: [

@@ -53,7 +53,7 @@ function Header(props) {
             <a className={(props.currentSection == "projects") ? "highlight" : ""} href="#projects" onClick={(e) => scrollToSection(e,'projects')}>Projects</a>
             <a className={(props.currentSection == "cv") ? "highlight" : ""} href="#cv" onClick={(e) => scrollToSection(e,'cv')}>CV</a>
             <a className={(props.currentSection == "contact") ? "highlight" : ""} href="#contact" onClick={(e) => scrollToSection(e,'contact')}>Contact</a>
-            <a href="https://umarrajput.co.uk/Old-Website" target='_blank' rel="noopener noreferrer">Games&nbsp;<span className="material-symbols-outlined">open_in_new</span></a>
+            <a href="https://umarrajput.co.uk/Umar-Rajput-Games" target='_blank' rel="noopener noreferrer">Games&nbsp;<span className="material-symbols-outlined">open_in_new</span></a>
         </nav>
         <div className="social-container">
           <a alt="GitHub Link" href="https://github.com/umarraj008/" target='_blank' rel="noopener noreferrer" className='git-button'><img alt="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
