@@ -15,14 +15,14 @@
 
 /* Desktop styles (1440px and up) */
 @media (min-width: 1440px) {
-  
-}
-
-footer {
-  border: 2px solid var(--BORDER-COLOR);
-  border-radius: 10px;
-  margin-top: 20px;
-  animation: fade-in 1s;
-  padding: 20px;
-  text-align: center;
+  /* Footer Container */
+  footer {
+    /* border: 2px solid var(--BORDER-COLOR); */
+    background-color: var(--color2);
+    border-radius: 10px;
+    animation: fade-in 1s;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+  }
 }

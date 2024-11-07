@@ -14,6 +14,7 @@
   line-height: 1em;
   font-family: "Roboto", sans-serif;
   color: var(--TEXT-COLOR);
+  transition: 0.2s ease-in-out;  
 }
 
 html {
@@ -27,21 +28,32 @@ button {
 
 /* Light Theme */
 :root[data-theme="light"] {
-  --c1: #B6C7AA;
-  --c2: #F6E6CB;
-  --c3: #E7D4B5;
-  --c4: #A0937D;
-
-  --MAIN-BG: var(--c2);
-  --HEADER-BG: var(--c1);
-  --BORDER-COLOR: #3C3D37;
-  --TEXT-COLOR: #3C3D37;
-  
+  --color1: #dbdbdb;
+  --color2: #ffffff;
+  --color3: #92c3d8;
+  --color4: #111111;
+  --line-color: black;
+  --text-color: black;
+  --button-color: rgba(0,0,0,0.2);
+  --button-text-color: black;
+  --button-hover: rgba(0,0,0,0.4);
+  --button-highlight: var(--color3); 
+  --logo-color: black;
 }
 
 /* Dark Theme */
 :root[data-theme="dark"] {
-  --MAIN-BG: #383723;
+  --color1: #222831;
+  --color2: #31363F;
+  --color3: #7693ae;
+  --color4: #EEEEEE;
+  --line-color: #fff;
+  --text-color: #fff;
+  --button-color: rgba(255,255,255,0.2);
+  --button-text-color: white;
+  --button-hover: rgba(0,0,0,0.2);
+  --button-highlight: var(--color3); 
+  --logo-color: white;
 }
 
 /* Fade In Animation */
@@ -52,4 +64,18 @@ button {
   to {
     opacity: 100;
   } 
+}
+
+/* 2k display */
+@media only screen and (min-width: 2560px) and (max-width: 3839px) {
+  body {
+    zoom: 1.25;
+  };
+}
+
+/* 4k display */
+@media only screen and (min-width: 3840px) {
+  body {
+    zoom: 2;
+  };
 }

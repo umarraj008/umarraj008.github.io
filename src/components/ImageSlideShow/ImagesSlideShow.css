@@ -1,0 +1,101 @@
+/* Slideshow Container */
+.slideshow-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Slideshow Image */
+.slideshow-container #slideshow-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 0;
+  flex: 1;
+  border-radius: 15px;
+  object-fit: contain;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Slideshow Button Container */
+.slideshow-container .button-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+
+/* Slideshow Buttons */
+.slideshow-container .button-container button {
+  background-color: transparent;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--TEXT-COLOR);
+  font-size: 2em;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+
+/* Slideshow Images Selector Container */
+.slideshow-container .button-container .images-selector-container {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+  transition: 0.2s ease-in-out;
+  overflow-x: auto;
+}
+
+/* Slideshow Images Selector Images */
+.slideshow-container .button-container .images-selector-container img {
+  border: 1px solid black;
+  width: 60px;
+  background-color: white;
+  height: 40px;
+  object-fit: contain;
+  filter: saturate(0) opacity(0.5);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+}
+
+/* Slideshow Images Selector Images Highlight */
+.slideshow-container .button-container .images-selector-container .highlight {
+  filter: opacity(1) saturate(1);
+  border: 2px solid blue;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
