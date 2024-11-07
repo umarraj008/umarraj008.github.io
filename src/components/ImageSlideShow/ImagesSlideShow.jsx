@@ -27,7 +27,6 @@ function ImagesSlideShow({images, alt}) {
   useEffect(() => {
     const interval = setInterval(() => {
       nextImage();
-      document.querySelector("images-selector-container").scrollTo(document.querySelector("img.highlight").scrollWidth);
     }, slideshowDuration);
 
     return () => {

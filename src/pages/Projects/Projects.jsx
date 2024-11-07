@@ -4,8 +4,6 @@ import ProjectItem from '../../components/ProjectItem/ProjectItem';
 
 function Projects() {
   const projects = [
-    
-    
     {
       title: "React Calendar App",
       subtitle: "React Web App",
@@ -13,7 +11,7 @@ function Projects() {
       description: "A React Web App that allows you to save and view your events.",
       github: "https://github.com/umarraj008/Calendar-App",
       demo: false,
-      demoLink: "https://github.com/umarraj008/Calendar-App",
+      demoLink: "https://umarrajput.co.uk/Calendar-App",
       tech: ["React", "JavaScript", "CSS"],
       images: [
         "https://raw.githubusercontent.com/umarraj008/Calendar-App/refs/heads/main/Project%20Screenshots/App.png",
@@ -33,7 +31,7 @@ function Projects() {
       description: "This is a simple React app that allows users to track their Todo's. They can add new Todo's, edit, and remove them.",
       github: "https://github.com/umarraj008/Todo-List-App",
       demo: false,
-      demoLink: "https://github.com/umarraj008/Todo-List-App",
+      demoLink: "https://umarrajput.co.uk/Todo-List-App",
       tech: ["React", "JavaScript", "CSS"],
       images: [
         "https://raw.githubusercontent.com/umarraj008/Todo-List-App/main/todo-list-app/public/screenshot.png",
@@ -63,7 +61,7 @@ function Projects() {
       demoLink: "https://github.com/umarraj008/Survey-Tool",
       tech: ["JavaScript", "PHP", "MySQL", "Charts.js", "GitHub", "Agile", "Kanban"],
       images: [
-        "https://umarrajput.co.uk/resources/projects/CoolSurveys.png",
+        "https://github.com/umarraj008/Survey-Tool/blob/main/CoolSurveys.png?raw=true",
       ],
     },
     {
@@ -115,14 +113,12 @@ function Projects() {
         "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/tetris.png",
         "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/snake.png",
         "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
-        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/xando.png",
+        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/clicker.png",
+        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/isoEngine.png",
+        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/pong.png",
+        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/shooter.png",
+        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/sonic.png",
+        "https://raw.githubusercontent.com/umarraj008/Old-Website/refs/heads/master/MenuImages/stacker.png",
       ],
     },
   ];
