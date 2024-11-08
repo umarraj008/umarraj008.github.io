@@ -1,2 +1,1 @@
-# umarraj008.github.io
-My personal website that displays my work and projects
+# Check out the website -> [https://umarrajput.co.uk](https://umarrajput.co.uk)
