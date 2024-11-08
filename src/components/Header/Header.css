@@ -5,7 +5,133 @@
 
 /* Tablet styles (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    animation: fade-in 1s;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    user-select: none;
+    color: var(--text-color);
+    background-color: var(--color1);
+  }
   
+  /* Header Container */
+  header .header-container {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color2);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Logo Container */
+  .header-container .logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Logo Image */
+  .header-container .logo-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  
+  /* Logo Title */
+  .header-container .logo-container h1 {
+    word-spacing: 99999999999px;
+    line-height: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--logo-color);
+  }
+  
+  /* Button Container */
+  .header-container .button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: auto;
+  }
+  
+  /* Button */
+  .header-container .button-container a {
+    width: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--button-text-color);
+    font-size: 1em;
+    border: none;
+    transition: 0.2s ease-in-out;  
+    background-color: var(--button-color);
+  }
+
+  /* Games Button */
+  .header-container .button-container #games-button {
+    width: 100px;
+  }
+  
+  /* Button Highlight */
+  .header-container .button-container a.highlight {
+    background-color: var(--button-highlight);
+  }
+  
+  /* Button Icon */
+  .header-container .button-container a span {
+    color: var(--text-color);
+  }
+  
+  /* Button Hover */
+  .header-container .button-container a:hover {
+    transform: translate(2px, 3px);
+    background-color: var(--button-hover);
+  }
+  
+  /* Social Container */
+  .header-container .social-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    flex: 1;
+    gap: 10px;
+    justify-content: right;
+    width: 0;
+    visibility: collapse;
+  }
+  
+  /* Social Buttons */
+  .header-container .social-container a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: content-box;
+    color: var(--text-color);
+  }
+  
+  /* Social Buttons Image */
+  .header-container .social-container a img {
+    margin: 0px;
+  }
 }
 
 /* Laptop styles (1024px to 1439px) */
