@@ -1,9 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Header.css";
 
 function Header(props) {
+  const [toggleMenu,setToggleMenu] = useState(false);
+
+  const toggleMenuClick = () => {
+    setToggleMenu(prev => !prev);
+  };
+
   const scrollToSection = (e, id) => {
     e?.preventDefault();
+    setToggleMenu(false);
 
     const section = document.getElementById(id);
     
@@ -41,7 +48,28 @@ function Header(props) {
   
   return (
     <header>
-      <div className='header-container'>
+      <div className='header-container header-mobile'>
+        <div className='logo-container'>
+          <img src='/umarLogoV3.png' />
+          <h1>Umar Rajput</h1>
+          <button className='menu-button' onClick={toggleMenuClick}>
+            <span className="material-symbols-outlined">{(toggleMenu) ? "close" : "menu"}</span>
+          </button>
+        </div>
+        {toggleMenu &&
+          <nav className='button-container'>
+              <a className={(props.currentSection == "home") ? "highlight" : ""} href="#home" onClick={(e) => scrollToSection(e,'home')}>Home</a>
+              <a className={(props.currentSection == "about") ? "highlight" : ""} href="#about" onClick={(e) => scrollToSection(e,'about')}>About</a>
+              <a className={(props.currentSection == "skills") ? "highlight" : ""} href="#skills" onClick={(e) => scrollToSection(e,'skills')}>Skills</a>
+              <a className={(props.currentSection == "projects") ? "highlight" : ""} href="#projects" onClick={(e) => scrollToSection(e,'projects')}>Projects</a>
+              <a className={(props.currentSection == "cv") ? "highlight" : ""} href="#cv" onClick={(e) => scrollToSection(e,'cv')}>CV</a>
+              <a className={(props.currentSection == "contact") ? "highlight" : ""} href="#contact" onClick={(e) => scrollToSection(e,'contact')}>Contact</a>
+              <a href="https://umarrajput.co.uk/Umar-Rajput-Games" id="games-button" target='_blank' rel="noopener noreferrer">Games&nbsp;<span className="material-symbols-outlined">open_in_new</span></a>
+          </nav>
+        }
+      </div>
+
+      <div className='header-container header-normal'>
         <div className='logo-container'>
           <img src='/umarLogoV3.png' />
           <h1>Umar Rajput</h1>

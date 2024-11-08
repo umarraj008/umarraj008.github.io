@@ -1,55 +1,10 @@
-/* Mobile styles (up to 767px) */
-@media (max-width: 767px) {
-   /* Footer Container */
-   footer {
-    /* border: 2px solid var(--BORDER-COLOR); */
-    background-color: var(--color2);
-    border-radius: 10px;
-    animation: fade-in 1s;
-    padding: 20px;
-    height: 300px;
-    text-align: center;
-  }
-}
-
-/* Tablet styles (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-   /* Footer Container */
-   footer {
-    /* border: 2px solid var(--BORDER-COLOR); */
-    background-color: var(--color2);
-    border-radius: 10px;
-    animation: fade-in 1s;
-    padding: 20px;
-    height: 300px;
-    text-align: center;
-  }
-}
-
-/* Laptop styles (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-  /* Footer Container */
-  footer {
-    /* border: 2px solid var(--BORDER-COLOR); */
-    background-color: var(--color2);
-    border-radius: 10px;
-    animation: fade-in 1s;
-    padding: 20px;
-    height: 300px;
-    text-align: center;
-  }
-}
-
-/* Desktop styles (1440px and up) */
-@media (min-width: 1440px) {
-  /* Footer Container */
-  footer {
-    /* border: 2px solid var(--BORDER-COLOR); */
-    background-color: var(--color2);
-    border-radius: 10px;
-    animation: fade-in 1s;
-    padding: 20px;
-    height: 300px;
-    text-align: center;
-  }
+/* Footer Container */
+footer {
+  /* border: 2px solid var(--BORDER-COLOR); */
+  background-color: var(--color2);
+  border-radius: 10px;
+  animation: fade-in 1s;
+  padding: 20px;
+  height: 300px;
+  text-align: center;
 }

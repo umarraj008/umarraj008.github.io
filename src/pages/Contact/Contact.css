@@ -22,7 +22,7 @@
   /* Contact Info Container */
   #contact .info-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
   }
   
@@ -41,7 +41,7 @@
 
   /* Info Container h3 */
   #contact .info-container .info-section h3 {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 

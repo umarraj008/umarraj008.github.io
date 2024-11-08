@@ -1,6 +1,99 @@
 /* Mobile styles (up to 767px) */
 @media (max-width: 767px) {
-  
+  /* Home Section */
+  #home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+
+  /* Left Section */
+  #home .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;;
+    text-align: left;
+    padding-left: 20px;
+    height: 300px;
+
+  }
+
+  /* Title */
+  #home .left-section .title {
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 1em;
+    color: var(--text-color);
+  }
+
+  /* Typing */
+  #home .left-section .typing {
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 1em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+
+    /* cursor */
+    margin-left: 0px;
+    width: max-content;
+    animation: blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 4px solid;
+  }
+
+  /* Subtitle */
+  #home .left-section h2 {
+    font-size: 0.75em;
+    text-align: left;
+    margin-bottom: 10px;
+    flex: 1;
+    color: var(--text-color);
+  }
+
+  /* Button */
+  #home .left-section a {
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    transition: 0.2s ease-in-out;  
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1.5s ease-out learnMoreButton infinite;
+    align-self: center;
+  }
+
+  /* Button Icon */
+  #home .left-section a span {
+    color: var(--text-color);
+    font-weight: bold;
+  }
+
+  /* Button Hover */
+  #home .left-section a:hover {
+    background-color: var(--button-hover);
+  }
+
+  /* Right Section */
+  #home .right-section {
+    display: flex;
+    justify-content: right;
+  }
+
+  /* Image */
+  #home .right-section img {
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
 }
 
 /* Tablet styles (768px to 1023px) */
