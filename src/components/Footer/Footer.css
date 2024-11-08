@@ -10,7 +10,16 @@
 
 /* Laptop styles (1024px to 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
-  
+  /* Footer Container */
+  footer {
+    /* border: 2px solid var(--BORDER-COLOR); */
+    background-color: var(--color2);
+    border-radius: 10px;
+    animation: fade-in 1s;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+  }
 }
 
 /* Desktop styles (1440px and up) */

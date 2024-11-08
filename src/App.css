@@ -56,19 +56,21 @@
   }
   
   body {
-    background-color: blue;
+    background-color: var(--color1);
+    color: var(--text-color);
   }
   
   main {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 100px;
   }
   
   section {
-    border-radius: 10px;
+    /* border: 2px solid var(--BORDER-COLOR); */
+    border-radius: 15px;
     animation: fade-in 1s;
-    min-height: 80vh;
+    min-height: 10vh;
   }
 }
 
