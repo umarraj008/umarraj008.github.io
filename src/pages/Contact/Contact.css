@@ -1,16 +1,142 @@
 /* Mobile styles (up to 767px) */
 @media (max-width: 767px) {
+  /* Contact Section */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+    color: var(--text-color);
+    /* background-color: red; */
+  }
+
+  /* Contact Title */
+  #contact h1 {
+    font-size: 3em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+    /* background-color: var(--HEADER-BG); */
+  }
+
+  /* Contact Info Container */
+  #contact .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   
+  /* Contact Info Section Container */
+  #contact .info-container .info-section {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--color2);
+    border-radius: 15px;
+  }  
+
+  /* Info Container h2 */
+  #contact .info-container .info-section h2 {
+    font-size: 2em;
+  }
+
+  /* Info Container h3 */
+  #contact .info-container .info-section h3 {
+    font-size: 1em;
+  }
 }
 
 /* Tablet styles (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
+  /* Contact Section */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+    color: var(--text-color);
+    /* background-color: red; */
+  }
+
+  /* Contact Title */
+  #contact h1 {
+    font-size: 3em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+    /* background-color: var(--HEADER-BG); */
+  }
+
+  /* Contact Info Container */
+  #contact .info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
   
+  /* Contact Info Section Container */
+  #contact .info-container .info-section {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--color2);
+    border-radius: 15px;
+  }  
+
+  /* Info Container h2 */
+  #contact .info-container .info-section h2 {
+    font-size: 2em;
+  }
+
+  /* Info Container h3 */
+  #contact .info-container .info-section h3 {
+    font-size: 1em;
+  }
 }
 
 /* Laptop styles (1024px to 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
+  /* Contact Section */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+    color: var(--text-color);
+    /* background-color: red; */
+  }
+
+  /* Contact Title */
+  #contact h1 {
+    font-size: 3em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+    /* background-color: var(--HEADER-BG); */
+  }
+
+  /* Contact Info Container */
+  #contact .info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
   
+  /* Contact Info Section Container */
+  #contact .info-container .info-section {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--color2);
+    border-radius: 15px;
+  }  
+
+  /* Info Container h2 */
+  #contact .info-container .info-section h2 {
+    font-size: 2em;
+  }
+
+  /* Info Container h3 */
+  #contact .info-container .info-section h3 {
+    font-size: 1.3em;
+  }
 }
 
 /* Desktop styles (1440px and up) */

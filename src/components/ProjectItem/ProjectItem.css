@@ -1,91 +1,379 @@
-/* Project Item */
-#projects .projects-container .projects-item {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  background-color: var(--color2);
-  /* border: 2px solid var(--BORDER-COLOR); */
-  border-radius: 15px;
-  gap: 20px
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+  /* Project Item */
+  #projects .projects-container .projects-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color2);
+    /* border: 2px solid var(--BORDER-COLOR); */
+    border-radius: 15px;
+    gap: 20px;
+  }
+
+  /* Project Item Left Side */
+  #projects .projects-container .projects-item .left-side {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Project Item Right Side */
+  /* #projects .projects-container .projects-item .right-side {
+  } */
+
+  /* Project Item Title */
+  #projects .projects-container .projects-item .left-side h2 {
+    font-size: 1.5em;
+  }
+
+  /* Project Item Subtitle */
+  #projects .projects-container .projects-item .left-side h3 {
+    font-style: italic;
+    font-size: 1em;
+  }
+
+  /* Project Item Chip Container */
+  #projects .projects-container .projects-item .left-side ul {
+    display: block;
+  }
+
+  /* Project Item Chip */
+  #projects .projects-container .projects-item .left-side ul li {
+    padding: 5px 10px 5px 10px;
+    list-style: none;
+    border-radius: 15px;
+    background-color: var(--color3);
+    width: max-content;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 0.75em;
+  }
+
+  /* First Project Chip Item */
+  #projects .projects-container .projects-item .left-side ul li:first-child {
+    margin-left: 0px;
+  }
+
+  /* Project Item Description */
+  #projects .projects-container .projects-item .left-side p {
+    margin-top: 5px;
+    /* height: 150px; */
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  /* Project Item Button Container */
+  #projects .projects-container .projects-item .left-side .button-container {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    margin-top: auto;
+  }
+
+  /* Project Item Button */
+  #projects .projects-container .projects-item .left-side .button-container a {
+    padding: 15px;
+    width: 100%;
+    background-color: var(--button-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  /* Project Item Button Hover */
+  #projects .projects-container .projects-item .left-side .button-container a:hover {
+    transform: translate(2px, 3px);
+    background-color: var(--button-hover);
+  }
 }
 
-/* Project Item Left Side */
-#projects .projects-container .projects-item .left-side {
-  flex: 1;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
+/* Laptop styles (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* Project Item */
+  #projects .projects-container .projects-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color2);
+    /* border: 2px solid var(--BORDER-COLOR); */
+    border-radius: 15px;
+    gap: 20px
+  }
+
+  /* Project Item Left Side */
+  #projects .projects-container .projects-item .left-side {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Project Item Right Side */
+  /* #projects .projects-container .projects-item .right-side {
+
+  } */
+
+  /* Project Item Title */
+  #projects .projects-container .projects-item .left-side h2 {
+    font-size: 2em;
+  }
+
+  /* Project Item Subtitle */
+  #projects .projects-container .projects-item .left-side h3 {
+    font-style: italic;
+  }
+
+  /* Project Item Chip Container */
+  #projects .projects-container .projects-item .left-side ul {
+    display: block;
+  }
+
+  /* Project Item Chip */
+  #projects .projects-container .projects-item .left-side ul li {
+    padding: 5px 10px 5px 10px;
+    list-style: none;
+    border-radius: 15px;
+    background-color: var(--color3);
+    width: max-content;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  /* First Project Chip Item */
+  #projects .projects-container .projects-item .left-side ul li:first-child {
+    margin-left: 0px;
+  }
+
+  /* Project Item Description */
+  #projects .projects-container .projects-item .left-side p {
+    margin-top: 5px;
+    /* height: 150px; */
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  /* Project Item Button Container */
+  #projects .projects-container .projects-item .left-side .button-container {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    margin-top: auto;
+  }
+
+  /* Project Item Button */
+  #projects .projects-container .projects-item .left-side .button-container a {
+    padding: 20px;
+    width: 150px;
+    background-color: var(--button-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  /* Project Item Button Hover */
+  #projects .projects-container .projects-item .left-side .button-container a:hover {
+    transform: translate(2px, 3px);
+    background-color: var(--button-hover);
+  }
 }
 
-/* Project Item Right Side */
-#projects .projects-container .projects-item .right-side {
+/* Laptop styles (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* Project Item */
+  #projects .projects-container .projects-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color2);
+    /* border: 2px solid var(--BORDER-COLOR); */
+    border-radius: 15px;
+    gap: 20px
+  }
 
+  /* Project Item Left Side */
+  #projects .projects-container .projects-item .left-side {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Project Item Right Side */
+  /* #projects .projects-container .projects-item .right-side {
+
+  } */
+
+  /* Project Item Title */
+  #projects .projects-container .projects-item .left-side h2 {
+    font-size: 2em;
+  }
+
+  /* Project Item Subtitle */
+  #projects .projects-container .projects-item .left-side h3 {
+    font-style: italic;
+  }
+
+  /* Project Item Chip Container */
+  #projects .projects-container .projects-item .left-side ul {
+    display: block;
+  }
+
+  /* Project Item Chip */
+  #projects .projects-container .projects-item .left-side ul li {
+    padding: 5px 10px 5px 10px;
+    list-style: none;
+    border-radius: 15px;
+    background-color: var(--color3);
+    width: max-content;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  /* First Project Chip Item */
+  #projects .projects-container .projects-item .left-side ul li:first-child {
+    margin-left: 0px;
+  }
+
+  /* Project Item Description */
+  #projects .projects-container .projects-item .left-side p {
+    margin-top: 5px;
+    /* height: 150px; */
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  /* Project Item Button Container */
+  #projects .projects-container .projects-item .left-side .button-container {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    margin-top: auto;
+  }
+
+  /* Project Item Button */
+  #projects .projects-container .projects-item .left-side .button-container a {
+    padding: 20px;
+    width: 150px;
+    background-color: var(--button-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  /* Project Item Button Hover */
+  #projects .projects-container .projects-item .left-side .button-container a:hover {
+    transform: translate(2px, 3px);
+    background-color: var(--button-hover);
+  }
 }
 
-/* Project Item Title */
-#projects .projects-container .projects-item .left-side h2 {
-  font-size: 2em;
-}
+/* Desktop styles (1440px and up) */
+@media (min-width: 1440px) {
+  /* Project Item */
+  #projects .projects-container .projects-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color2);
+    /* border: 2px solid var(--BORDER-COLOR); */
+    border-radius: 15px;
+    gap: 20px
+  }
 
-/* Project Item Subtitle */
-#projects .projects-container .projects-item .left-side h3 {
-  font-style: italic;
-}
+  /* Project Item Left Side */
+  #projects .projects-container .projects-item .left-side {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-/* Project Item Chip Container */
-#projects .projects-container .projects-item .left-side ul {
-  display: block;
-}
+  /* Project Item Right Side */
+  /* #projects .projects-container .projects-item .right-side {
 
-/* Project Item Chip */
-#projects .projects-container .projects-item .left-side ul li {
-  padding: 5px 10px 5px 10px;
-  list-style: none;
-  border-radius: 15px;
-  background-color: var(--color3);
-  width: max-content;
-  float: left;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  font-size: 1em;
-}
+  } */
 
-/* First Project Chip Item */
-#projects .projects-container .projects-item .left-side ul li:first-child {
-  margin-left: 0px;
-}
+  /* Project Item Title */
+  #projects .projects-container .projects-item .left-side h2 {
+    font-size: 2em;
+  }
 
-/* Project Item Description */
-#projects .projects-container .projects-item .left-side p {
-  margin-top: 5px;
-  /* height: 150px; */
-  font-size: 1em;
-  font-weight: 400;
-}
+  /* Project Item Subtitle */
+  #projects .projects-container .projects-item .left-side h3 {
+    font-style: italic;
+  }
 
-/* Project Item Button Container */
-#projects .projects-container .projects-item .left-side .button-container {
-  display: flex;
-  align-content: center;
-  gap: 20px;
-  margin-top: auto;
-}
+  /* Project Item Chip Container */
+  #projects .projects-container .projects-item .left-side ul {
+    display: block;
+  }
 
-/* Project Item Button */
-#projects .projects-container .projects-item .left-side .button-container a {
-  padding: 20px;
-  width: 150px;
-  background-color: var(--button-color);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
+  /* Project Item Chip */
+  #projects .projects-container .projects-item .left-side ul li {
+    padding: 5px 10px 5px 10px;
+    list-style: none;
+    border-radius: 15px;
+    background-color: var(--color3);
+    width: max-content;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
 
-/* Project Item Button Hover */
-#projects .projects-container .projects-item .left-side .button-container a:hover {
-  transform: translate(2px, 3px);
-  background-color: var(--button-hover);
+  /* First Project Chip Item */
+  #projects .projects-container .projects-item .left-side ul li:first-child {
+    margin-left: 0px;
+  }
+
+  /* Project Item Description */
+  #projects .projects-container .projects-item .left-side p {
+    margin-top: 5px;
+    /* height: 150px; */
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  /* Project Item Button Container */
+  #projects .projects-container .projects-item .left-side .button-container {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    margin-top: auto;
+  }
+
+  /* Project Item Button */
+  #projects .projects-container .projects-item .left-side .button-container a {
+    padding: 20px;
+    width: 150px;
+    background-color: var(--button-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  /* Project Item Button Hover */
+  #projects .projects-container .projects-item .left-side .button-container a:hover {
+    transform: translate(2px, 3px);
+    background-color: var(--button-hover);
+  }
 }

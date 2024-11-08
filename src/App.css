@@ -1,99 +1,22 @@
 /* Mobile styles (up to 767px) */
-@media (max-width: 767px) {
-  #root {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  body {
-    background-color: red;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  section {
-    border: 2px solid var(--BORDER-COLOR);
-    border-radius: 10px;
-    animation: fade-in 1s;
-    min-height: 10vh;
-  }
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-/* Tablet styles (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  #root {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  body {
-    background-color: lime;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  section {
-    border: 2px solid var(--BORDER-COLOR);
-    border-radius: 10px;
-    animation: fade-in 1s;
-    min-height: 80vh;
-  }
+body {
+  background-color: var(--color1);
+  color: var(--text-color);
 }
 
-/* Laptop styles (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
-  #root {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  body {
-    background-color: blue;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  section {
-    border-radius: 10px;
-    animation: fade-in 1s;
-    min-height: 80vh;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
-/* Desktop styles (1440px and up) */
-@media (min-width: 1440px) {
-  #root {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  body {
-    background-color: var(--color1);
-    color: var(--text-color);
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-  }
-  
-  section {
-    /* border: 2px solid var(--BORDER-COLOR); */
-    border-radius: 15px;
-    animation: fade-in 1s;
-    min-height: 10vh;
-  }
+section {
+  border-radius: 15px;
+  animation: fade-in 1s;
+  min-height: 10vh;
 }

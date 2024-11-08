@@ -11,7 +11,8 @@ function ThemeChangeButton() {
         document.documentElement.setAttribute('data-theme', savedTheme);
         setTheme(savedTheme);
     } else {
-        const systemPreferredTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        // const systemPreferredTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const systemPreferredTheme = 'dark';
         localStorage.setItem('theme', systemPreferredTheme);
         document.documentElement.setAttribute('data-theme', systemPreferredTheme);
         setTheme(systemPreferredTheme);

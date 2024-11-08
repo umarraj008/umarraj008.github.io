@@ -65,17 +65,3 @@ button {
     opacity: 100;
   } 
 }
-
-/* 2k display */
-@media only screen and (min-width: 2560px) and (max-width: 3839px) {
-  body {
-    zoom: 1.25;
-  };
-}
-
-/* 4k display */
-@media only screen and (min-width: 3840px) {
-  body {
-    zoom: 2;
-  };
-}
