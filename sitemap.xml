@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- ( Date Format: YYYY-MM-DD ) -->
+  <!-- Main page -->
+  <url>
+    <loc>https://umarrajput.co.uk/</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Section pages using hash fragments -->
+  <!-- Home Section -->
+  <url>
+    <loc>https://umarrajput.co.uk/#home</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://umarrajput.co.uk/#about</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Skills Section -->
+  <url>
+    <loc>https://umarrajput.co.uk/#skills</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Project Section -->
+  <url>
+    <loc>https://umarrajput.co.uk/#project</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CV Section -->
+  <url>
+    <loc>https://umarrajput.co.uk/#cv</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://umarrajput.co.uk/#contact</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Subdomain links (external apps) -->
+  <!-- Calendar App -->
+  <url>
+    <loc>https://umarrajput.co.uk/Calendar-App</loc>
+    <lastmod>2024-11-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Todo List App -->
+  <url>
+    <loc>https://umarrajput.co.uk/Todo-List-App</loc>
+    <lastmod>2024-11-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Umar Rajput Games  -->
+  <url>
+    <loc>https://umarrajput.co.uk/Umar-Rajput-Games</loc>
+    <lastmod>2024-11-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>
