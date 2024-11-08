@@ -161,7 +161,7 @@
 
   /* Normal Header */
   .header-normal {
-    display: block !important;
+    display: flex !important;
   }
   
   /* Mobile Header */
@@ -304,7 +304,7 @@
 
   /* Normal Header */
   .header-normal {
-    display: block !important;
+    display: flex !important;
   }
   
   /* Mobile Header */
@@ -432,6 +432,7 @@
 @media (min-width: 1440px) {
   header {
     display: flex;
+    background-color: red;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -450,7 +451,7 @@
 
   /* Normal Header */
   .header-normal {
-    display: block !important;
+    display: flex !important;
   }
   
   /* Mobile Header */
