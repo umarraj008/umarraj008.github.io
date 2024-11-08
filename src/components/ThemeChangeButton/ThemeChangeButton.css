@@ -1,6 +1,6 @@
 .theme-change-button {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
@@ -12,6 +12,7 @@
   border: none;
   outline: none;
   transition: 0.2s ease-in-out;
+  z-index: 999999999999;
 }
 
 .light {

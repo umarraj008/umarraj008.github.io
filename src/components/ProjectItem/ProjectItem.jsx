@@ -20,7 +20,7 @@ function ProjectItem({project}) {
         </div>
       </div>
       <div className="right-side">
-        <ImagesSlideShow images={project.images} alt="Project Images"/>
+        <ImagesSlideShow images={project.images} alt="Umar Rajput Project Image"/>
       </div>
     </div>
   )
