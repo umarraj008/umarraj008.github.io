@@ -1,2 +1,2 @@
-user-agent: *
-sitemap: https://umarrajput.co.uk/sitemap.xml
+User-agent: *
+Sitemap: https://umarrajput.co.uk/sitemap.xml
