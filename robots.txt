@@ -1,2 +1,4 @@
 user-agent: *
-disallow:
+disallow: /private/
+allow: /public/
+sitemap: https://umarrajput.co.uk/sitemap.xml
