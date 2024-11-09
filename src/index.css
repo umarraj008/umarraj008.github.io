@@ -13,7 +13,7 @@
   font-weight: bold;
   line-height: 1em;
   font-family: "Roboto", sans-serif;
-  color: var(--TEXT-COLOR);
+  color: var(--text-color) !important;
   transition: 0.2s ease-in-out;  
 }
 

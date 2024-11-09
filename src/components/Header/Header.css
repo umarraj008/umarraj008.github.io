@@ -14,10 +14,12 @@
     user-select: none;
     color: var(--text-color);
     background-color: var(--color1);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Normal Header */
-  .header-normal {
+.header-normal {
     display: none !important;
   }
   
@@ -37,6 +39,7 @@
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
+    width: 100%;
   }
   
   /* Logo Container */
@@ -45,6 +48,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    width: 100%;
   }
   
   /* Logo Image */
@@ -69,6 +73,7 @@
     padding: 5px;
     outline: none;
     border: none;
+    margin-left: auto;
   }
   
   /* Button Container */
@@ -157,6 +162,8 @@
     user-select: none;
     color: var(--text-color);
     background-color: var(--color1);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Normal Header */
@@ -293,13 +300,10 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     user-select: none;
     color: var(--text-color);
     background-color: var(--color1);
-    /* height: 80px; */
-    /* background: linear-gradient(180deg, var(--MAIN-BG) 90%, rgba(0,0,0,0) 100%); */
   }
 
   /* Normal Header */
@@ -318,20 +322,17 @@
     display: flex;
     flex-direction: row;
     background-color: var(--color2);
-    /* background-color: red; */
     justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
-    /* border: 2px solid var(--BORDER-COLOR); */
   }
   
   /* Logo Container */
   .header-container .logo-container {
     display: flex;
     flex-direction: row;
-    /* margin-right: auto; */
     flex: 1;
     align-items: center;
     gap: 10px;
@@ -360,12 +361,11 @@
     flex-direction: row;
     gap: 10px;
     flex: 1;
-    /* background-color: orange; */
   }
   
   /* Button */
   .header-container .button-container a {
-    width: 100px;
+    width: 90px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -375,15 +375,12 @@
     color: var(--button-text-color);
     font-size: 1em;
     border: none;
-    /* border: 2px solid var(--BORDER-COLOR); */
-    /* box-shadow: 2px 3px var(--BORDER-COLOR); */
     transition: 0.2s ease-in-out;  
     background-color: var(--button-color);
   }
   
   /* Button Highlight */
   .header-container .button-container a.highlight {
-    /* background-color: rgb(92, 124, 95); */
     background-color: var(--button-highlight);
   }
   
@@ -406,7 +403,6 @@
     flex: 1;
     gap: 10px;
     justify-content: right;
-    /* background-color: lime; */
   }
   
   /* Social Buttons */
@@ -418,7 +414,6 @@
     justify-content: center;
     overflow: hidden;
     box-sizing: content-box;
-    /* background-color: transparent; */
     color: var(--text-color);
   }
   
@@ -445,8 +440,6 @@
     user-select: none;
     color: var(--text-color);
     background-color: var(--color1);
-    /* height: 80px; */
-    /* background: linear-gradient(180deg, var(--MAIN-BG) 90%, rgba(0,0,0,0) 100%); */
   }
 
   /* Normal Header */
@@ -465,20 +458,17 @@
     display: flex;
     flex-direction: row;
     background-color: var(--color2);
-    /* background-color: red; */
     justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
-    /* border: 2px solid var(--BORDER-COLOR); */
   }
   
   /* Logo Container */
   .header-container .logo-container {
     display: flex;
     flex-direction: row;
-    /* margin-right: auto; */
     flex: 1;
     align-items: center;
     gap: 10px;
@@ -506,7 +496,6 @@
     flex-direction: row;
     gap: 10px;
     flex: 1;
-    /* background-color: orange; */
   }
   
   /* Button */
@@ -521,15 +510,12 @@
     color: var(--button-text-color);
     font-size: 1em;
     border: none;
-    /* border: 2px solid var(--BORDER-COLOR); */
-    /* box-shadow: 2px 3px var(--BORDER-COLOR); */
     transition: 0.2s ease-in-out;  
     background-color: var(--button-color);
   }
   
   /* Button Highlight */
   .header-container .button-container a.highlight {
-    /* background-color: rgb(92, 124, 95); */
     background-color: var(--button-highlight);
   }
   
@@ -552,7 +538,6 @@
     flex: 1;
     gap: 10px;
     justify-content: right;
-    /* background-color: lime; */
   }
   
   /* Social Buttons */
@@ -564,7 +549,6 @@
     justify-content: center;
     overflow: hidden;
     box-sizing: content-box;
-    /* background-color: transparent; */
     color: var(--text-color);
   }
   

@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color2);
-    /* border: 2px solid var(--BORDER-COLOR); */
     border-radius: 15px;
     gap: 20px;
   }
@@ -18,10 +17,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  /* Project Item Right Side */
-  /* #projects .projects-container .projects-item .right-side {
-  } */
 
   /* Project Item Title */
   #projects .projects-container .projects-item .left-side h2 {
@@ -61,7 +56,6 @@
   /* Project Item Description */
   #projects .projects-container .projects-item .left-side p {
     margin-top: 5px;
-    /* height: 150px; */
     font-size: 1em;
     font-weight: 400;
   }
@@ -93,15 +87,14 @@
   }
 }
 
-/* Laptop styles (1024px to 1439px) */
-@media (min-width: 1024px) and (max-width: 1439px) {
+/* Tablet styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
   /* Project Item */
   #projects .projects-container .projects-item {
     padding: 20px;
     display: flex;
     flex-direction: row;
     background-color: var(--color2);
-    /* border: 2px solid var(--BORDER-COLOR); */
     border-radius: 15px;
     gap: 20px
   }
@@ -113,11 +106,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  /* Project Item Right Side */
-  /* #projects .projects-container .projects-item .right-side {
-
-  } */
 
   /* Project Item Title */
   #projects .projects-container .projects-item .left-side h2 {
@@ -156,7 +144,6 @@
   /* Project Item Description */
   #projects .projects-container .projects-item .left-side p {
     margin-top: 5px;
-    /* height: 150px; */
     font-size: 1em;
     font-weight: 400;
   }
@@ -172,7 +159,7 @@
   /* Project Item Button */
   #projects .projects-container .projects-item .left-side .button-container a {
     padding: 20px;
-    width: 150px;
+    width: 100%;
     background-color: var(--button-color);
     border-radius: 15px;
     display: flex;
@@ -196,7 +183,6 @@
     display: flex;
     flex-direction: row;
     background-color: var(--color2);
-    /* border: 2px solid var(--BORDER-COLOR); */
     border-radius: 15px;
     gap: 20px
   }
@@ -208,11 +194,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  /* Project Item Right Side */
-  /* #projects .projects-container .projects-item .right-side {
-
-  } */
 
   /* Project Item Title */
   #projects .projects-container .projects-item .left-side h2 {
@@ -251,7 +232,6 @@
   /* Project Item Description */
   #projects .projects-container .projects-item .left-side p {
     margin-top: 5px;
-    /* height: 150px; */
     font-size: 1em;
     font-weight: 400;
   }
@@ -267,7 +247,7 @@
   /* Project Item Button */
   #projects .projects-container .projects-item .left-side .button-container a {
     padding: 20px;
-    width: 150px;
+    width: 100%;
     background-color: var(--button-color);
     border-radius: 15px;
     display: flex;
@@ -291,7 +271,6 @@
     display: flex;
     flex-direction: row;
     background-color: var(--color2);
-    /* border: 2px solid var(--BORDER-COLOR); */
     border-radius: 15px;
     gap: 20px
   }
@@ -303,11 +282,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  /* Project Item Right Side */
-  /* #projects .projects-container .projects-item .right-side {
-
-  } */
 
   /* Project Item Title */
   #projects .projects-container .projects-item .left-side h2 {
@@ -346,7 +320,6 @@
   /* Project Item Description */
   #projects .projects-container .projects-item .left-side p {
     margin-top: 5px;
-    /* height: 150px; */
     font-size: 1em;
     font-weight: 400;
   }
@@ -362,7 +335,7 @@
   /* Project Item Button */
   #projects .projects-container .projects-item .left-side .button-container a {
     padding: 20px;
-    width: 150px;
+    width: 100%;
     background-color: var(--button-color);
     border-radius: 15px;
     display: flex;

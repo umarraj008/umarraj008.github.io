@@ -9,6 +9,8 @@
     gap: 20px;
     height: max-content;
     color: var(--text-color);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* CV Title */
@@ -44,6 +46,8 @@
     gap: 20px;
     height: max-content;
     color: var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* CV Title */
@@ -79,6 +83,8 @@
     gap: 20px;
     height: max-content;
     color: var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* CV Title */

@@ -7,7 +7,8 @@
     gap: 20px;
     margin-bottom: 100px;
     color: var(--text-color);
-    /* background-color: red; */
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Contact Title */
@@ -16,7 +17,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
   }
 
   /* Contact Info Container */
@@ -54,7 +54,8 @@
     gap: 20px;
     margin-bottom: 100px;
     color: var(--text-color);
-    /* background-color: red; */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Contact Title */
@@ -63,7 +64,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
   }
 
   /* Contact Info Container */
@@ -101,7 +101,8 @@
     gap: 20px;
     margin-bottom: 100px;
     color: var(--text-color);
-    /* background-color: red; */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Contact Title */
@@ -110,7 +111,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
   }
 
   /* Contact Info Container */
@@ -148,7 +148,6 @@
     gap: 20px;
     margin-bottom: 100px;
     color: var(--text-color);
-    /* background-color: red; */
   }
 
   /* Contact Title */
@@ -157,7 +156,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
   }
 
   /* Contact Info Container */

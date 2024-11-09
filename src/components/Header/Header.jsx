@@ -50,7 +50,7 @@ function Header(props) {
     <header>
       <div className='header-container header-mobile'>
         <div className='logo-container'>
-          <img src='/umarLogoV3.png' />
+          <img loading='lazy' src='/umarLogoV3.webp' />
           <h1>Umar Rajput</h1>
           <button className='menu-button' onClick={toggleMenuClick}>
             <span className="material-symbols-outlined">{(toggleMenu) ? "close" : "menu"}</span>
@@ -71,7 +71,7 @@ function Header(props) {
 
       <div className='header-container header-normal'>
         <div className='logo-container'>
-          <img src='/umarLogoV3.png' />
+          <img loading='lazy' src='/umarLogoV3.png' />
           <h1>Umar Rajput</h1>
         </div>
         <nav className='button-container'>
@@ -84,8 +84,8 @@ function Header(props) {
             <a href="https://umarrajput.co.uk/Umar-Rajput-Games" id="games-button" target='_blank' rel="noopener noreferrer">Games&nbsp;<span className="material-symbols-outlined">open_in_new</span></a>
         </nav>
         <div className="social-container">
-          <a alt="GitHub Link" href="https://github.com/umarraj008/" target='_blank' rel="noopener noreferrer" className='git-button'><img alt="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /></a>
-          <a alt="LinkedIn Link" href="https://www.linkedin.com/in/umar-rajput/" target='_blank' rel="noopener noreferrer"><img alt="LinkedIn" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" /></a>
+          <a alt="GitHub Link" href="https://github.com/umarraj008/" target='_blank' rel="noopener noreferrer" className='git-button'><img loading='lazy' alt="GitHub" src="/github.svg" /></a>
+          <a alt="LinkedIn Link" href="https://www.linkedin.com/in/umar-rajput/" target='_blank' rel="noopener noreferrer"><img loading='lazy' alt="LinkedIn" src="/linkedin.svg" /></a>
         </div>
       </div>
     </header>
