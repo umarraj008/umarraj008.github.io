@@ -12,7 +12,7 @@ function Home() {
         <a href="#about"><span className="material-symbols-outlined">arrow_downward</span>&nbsp;Learn More</a>
       </div>
       <div className="right-section">
-        <img src="/umar.jpg" alt="Umar Rajput | Full-Stack Developer Portfolio"/>
+        <img src="/umar.webp" alt="Umar Rajput | Full-Stack Developer Portfolio"/>
       </div>
     </section>
   )

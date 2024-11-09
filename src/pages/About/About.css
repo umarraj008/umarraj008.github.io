@@ -6,6 +6,8 @@
     flex-direction: column;
     gap: 20px;
     color: var(--text-color);
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   /* About Title */
@@ -14,8 +16,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
-    /* background-color: var(--fb5); */
   }
   
   /* Info Container */
@@ -28,27 +28,22 @@
     border-radius: 15px;
     padding: 20px;
     background-color: var(--color2);
-    /* border: 2px solid var(--line-color); */
   }
     
   /* Left Section */
   #about .info-container .left-section {
-    width: 300px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    /* background-color: red; */
   }
 
   /* Left Section Image */
   #about .info-container .left-section img {
-    /* width: 100%; */
-    /* height: 100%; */
     width: 100%;
     border-radius: 15px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     box-sizing: border-box;
-    /* border: 4px solid var(--BORDER-COLOR); */
   }
   
   /* Right Section */
@@ -58,9 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 20px; */
     box-sizing: border-box;
-    /* background-color: var(--fb1); */
     border-radius: 15px;
   }
   
@@ -79,6 +72,8 @@
     flex-direction: column;
     gap: 20px;
     color: var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   /* About Title */
@@ -87,8 +82,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
-    /* background-color: var(--fb5); */
   }
   
   /* Info Container */
@@ -101,7 +94,6 @@
     border-radius: 15px;
     padding: 20px;
     background-color: var(--color2);
-    /* border: 2px solid var(--line-color); */
   }
     
   /* Left Section */
@@ -109,19 +101,15 @@
     width: 300px;
     display: flex;
     justify-content: center;
-    /* background-color: red; */
   }
 
   /* Left Section Image */
   #about .info-container .left-section img {
-    /* width: 100%; */
-    /* height: 100%; */
     width: 100%;
     border-radius: 15px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     box-sizing: border-box;
-    /* border: 4px solid var(--BORDER-COLOR); */
   }
   
   /* Right Section */
@@ -131,9 +119,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 20px; */
     box-sizing: border-box;
-    /* background-color: var(--fb1); */
     border-radius: 15px;
   }
   
@@ -152,6 +138,8 @@
     flex-direction: column;
     gap: 20px;
     color: var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   /* About Title */
@@ -160,8 +148,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
-    /* background-color: var(--fb5); */
   }
   
   /* Info Container */
@@ -174,7 +160,6 @@
     border-radius: 15px;
     padding: 20px;
     background-color: var(--color2);
-    /* border: 2px solid var(--line-color); */
   }
     
   /* Left Section */
@@ -182,19 +167,15 @@
     width: 300px;
     display: flex;
     justify-content: center;
-    /* background-color: red; */
   }
 
   /* Left Section Image */
   #about .info-container .left-section img {
-    /* width: 100%; */
-    /* height: 100%; */
     width: 100%;
     border-radius: 15px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     box-sizing: border-box;
-    /* border: 4px solid var(--BORDER-COLOR); */
   }
   
   /* Right Section */
@@ -204,9 +185,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 20px; */
     box-sizing: border-box;
-    /* background-color: var(--fb1); */
     border-radius: 15px;
   }
   
@@ -233,8 +212,6 @@
     text-align: right;
     padding: 10px;
     border-radius: 15px;
-    /* background-color: var(--HEADER-BG); */
-    /* background-color: var(--fb5); */
   }
   
   /* Info Container */
@@ -247,7 +224,6 @@
     border-radius: 15px;
     padding: 20px;
     background-color: var(--color2);
-    /* border: 2px solid var(--line-color); */
   }
     
   /* Left Section */
@@ -255,19 +231,15 @@
     width: 300px;
     display: flex;
     justify-content: center;
-    /* background-color: red; */
   }
 
   /* Left Section Image */
   #about .info-container .left-section img {
-    /* width: 100%; */
-    /* height: 100%; */
     width: 100%;
     border-radius: 15px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     box-sizing: border-box;
-    /* border: 4px solid var(--BORDER-COLOR); */
   }
   
   /* Right Section */
@@ -277,9 +249,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 20px; */
     box-sizing: border-box;
-    /* background-color: var(--fb1); */
     border-radius: 15px;
   }
   
