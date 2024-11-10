@@ -24,4 +24,4 @@ Email - umar.rajput02@gmail.com
 Website - [umarrajput.co.uk](umarrajput.co.uk)  
 GitHub - [@umarraj008](https://github.com/umarraj008)  
 LinkedIn - [in/umar-rajput](https://www.linkedin.com/in/umar-rajput/)   
-Project Link: [https://github.com/umarraj008/Calendar-App](https://github.com/umarraj008/umarraj008.github.io)
+Project Link: [https://github.com/umarraj008/umarraj008.github.io](https://github.com/umarraj008/umarraj008.github.io)
