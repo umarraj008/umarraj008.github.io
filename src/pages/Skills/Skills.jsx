@@ -24,10 +24,10 @@ function Skills() {
             <p>JavaScript</p>
           </div>
   
-          <div className="skills-item">
+          {/* <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" /> 
             <p>TypeScript</p>
-          </div>
+          </div> */}
 
           <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" /> 
@@ -81,6 +81,11 @@ function Skills() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" /> 
             <p>Express</p>
           </div>
+          
+          <div className="skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" /> 
+            <p>Spring</p>
+          </div>
 
           <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" /> 
@@ -97,10 +102,10 @@ function Skills() {
             <p>Vite</p>
           </div>
           
-          <div className="skills-item">
+          {/* <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" /> 
             <p>.Net Core</p>
-          </div>
+          </div> */}
           
           <div className="skills-item">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" /> 

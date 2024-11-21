@@ -17,7 +17,7 @@
 
 .light {
   color: black;
-  background-color: white;
+  background-color: var(--color2)
 }
 
 .dark {

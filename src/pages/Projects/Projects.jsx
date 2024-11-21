@@ -12,7 +12,7 @@ function Projects() {
       github: "https://github.com/umarraj008/Calendar-App",
       demo: true,
       demoLink: "https://umarrajput.co.uk/Calendar-App",
-      tech: ["React", "JavaScript", "CSS"],
+      tech: ["React", "JavaScript", "CSS", "GitHub"],
       images: [
         "https://raw.githubusercontent.com/umarraj008/Calendar-App/refs/heads/main/Project%20Screenshots/App.png",
         "https://raw.githubusercontent.com/umarraj008/Calendar-App/refs/heads/main/Project%20Screenshots/addEvent.gif",
@@ -32,7 +32,7 @@ function Projects() {
       github: "https://github.com/umarraj008/Todo-List-App",
       demo: true,
       demoLink: "https://umarrajput.co.uk/Todo-List-App",
-      tech: ["React", "JavaScript", "CSS"],
+      tech: ["React", "JavaScript", "CSS", "GitHub"],
       images: [
         "https://raw.githubusercontent.com/umarraj008/Todo-List-App/main/todo-list-app/public/screenshot.png",
         "https://raw.githubusercontent.com/umarraj008/Todo-List-App/main/todo-list-app/public/screenshot2.png",
